@@ -1,11 +1,19 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { CurrencySwitcher } from "./CurrencySwitcher";
 import type { TradeInfo } from "@/lib/shop-context";
+import { getCurrency } from "@/lib/shop-context";
+import { formatMoney } from "@/lib/format";
+import { RETAIL_RULES } from "@/lib/config";
 
 export async function TopBar({ trade }: { trade: TradeInfo | null }) {
-  const t = await getTranslations("topbar");
+  const [t, currency, locale] = await Promise.all([
+    getTranslations("topbar"),
+    getCurrency(),
+    getLocale(),
+  ]);
+  const threshold = formatMoney(RETAIL_RULES.freeShippingFrom, currency, locale).replace(/[.,]00(?=\D*$)/, "");
   return (
     <div className="no-print bg-ink text-ivory">
       <div className="mx-auto flex h-9 max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6">
@@ -13,7 +21,7 @@ export async function TopBar({ trade }: { trade: TradeInfo | null }) {
           <LocaleSwitcher />
           <CurrencySwitcher />
         </div>
-        <p className="eyebrow hidden opacity-80 md:block">{t("shippingNote")}</p>
+        <p className="eyebrow hidden opacity-80 md:block">{trade ? t("tradeNote") : t("shippingNote", { amount: threshold })}</p>
         {trade ? (
           <Link href="/trade" className="eyebrow hover:underline underline-offset-4">
             {t("tradeArea")}

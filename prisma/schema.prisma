@@ -1,0 +1,68 @@
+// SQLite in development. For production (Vercel) switch the provider to
+// "postgresql" and point DATABASE_URL to Neon / Vercel Postgres — see README.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model TradeAccount {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  company      String
+  contactName  String
+  phone        String?
+  businessType String?
+  vatNumber    String
+  country      String
+  /// How the VAT number was checked: vies | hmrc | format | unverified
+  vatCheck     String
+  /// Company name returned by VIES / HMRC, if any
+  vatCheckName String?
+  vatCheckNote String?
+  vatCheckedAt DateTime?
+  approved     Boolean   @default(false)
+  approvedAt   DateTime?
+  /// trade | admin
+  role         String    @default("trade")
+  createdAt    DateTime  @default(now())
+  orders       Order[]
+}
+
+model Order {
+  id        String        @id @default(cuid())
+  number    String        @unique
+  /// retail | trade
+  kind      String
+  /// retail: paid_simulated | paid ; trade: draft | confirmed | cancelled
+  status    String
+  accountId String?
+  account   TradeAccount? @relation(fields: [accountId], references: [id])
+  email     String
+  name      String
+  company   String?
+  vatNumber String?
+  address   String
+  city      String
+  postcode  String
+  country   String
+  phone     String?
+  notes     String?
+  currency  String
+  rate      Float
+  vatRegime String?
+  subtotal  Float
+  discount  Float
+  shipping  Float?
+  vatTotal  Float
+  /// JSON [{ rate, base, amount }] for trade orders
+  vatBreakdown String?
+  total     Float
+  /// JSON snapshot of the priced lines at the time of the order
+  lines     String
+  createdAt DateTime      @default(now())
+}

@@ -8,6 +8,8 @@ type Props = {
   sizes?: string;
   priority?: boolean;
   className?: string;
+  /** Thumbnails: the placeholder drops its text. */
+  compact?: boolean;
 };
 
 /**
@@ -19,6 +21,7 @@ export function ProductImage({
   sizes = "(min-width: 1024px) 25vw, 50vw",
   priority,
   className = "",
+  compact,
 }: Props) {
   const src = imageFor("products", product.slug);
   const producer = getProducer(product.producer)?.name ?? "";
@@ -34,6 +37,8 @@ export function ProductImage({
           priority={priority}
           className="object-contain transition-transform duration-700 ease-soft group-hover:scale-[1.03]"
         />
+      ) : compact ? (
+        <div aria-hidden="true" className="absolute inset-[22%_30%] border hairline bg-ivory" />
       ) : (
         <Placeholder producer={producer} name={product.name} detail={placeholderDetail(product)} />
       )}

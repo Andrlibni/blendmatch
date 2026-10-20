@@ -26,9 +26,10 @@
   "topbar": {
     "language": "Lingua",
     "currency": "Valuta",
-    "shippingNote": "Spedizione gratuita sopra 120 € · UK e Nord Europa",
+    "shippingNote": "Spedizione gratuita sopra {amount} · UK e Nord Europa",
     "tradeLogin": "Accesso Trade",
-    "tradeArea": "Area Trade"
+    "tradeArea": "Area Trade",
+    "tradeNote": "Prezzi trade IVA esclusa · casse miste da 6"
   },
   "footer": {
     "shop": "Shop",
@@ -254,5 +255,118 @@
     "title": "Questa pagina non c'è.",
     "body": "Forse è stata spostata, o non è mai esistita.",
     "cta": "Torna al catalogo"
+  },
+  "cart": {
+    "title": "Il tuo carrello",
+    "loading": "Caricamento del carrello…",
+    "empty": "Il carrello è vuoto.",
+    "continue": "Continua gli acquisti",
+    "items": "Articoli",
+    "remove": "Rimuovi",
+    "quantityFor": "Quantità per {name}",
+    "caseOf": "Cassa da {size}",
+    "summaryTitle": "Riepilogo",
+    "tradeSummary": "Ordine trade",
+    "bottles": "{count, plural, one {# bottiglia di vino} other {# bottiglie di vino}}",
+    "freeShippingLeft": "Aggiungi {amount} per la spedizione gratuita (da {threshold}).",
+    "checkout": "Procedi al checkout",
+    "requestOrder": "Continua con la richiesta d'ordine",
+    "issues": {
+      "minWine": "Gli ordini trade richiedono almeno {min} bottiglie di vino (ne hai {current}).",
+      "wineCase": "Il vino è venduto in casse da {size}: aggiungi {missing, plural, one {# bottiglia} other {# bottiglie}} per completare la cassa.",
+      "pantryCase": "{name} è venduto in casse da {size}."
+    },
+    "summary": {
+      "subtotal": "Subtotale",
+      "subtotalEx": "Subtotale (IVA esclusa)",
+      "discount": "Sconto quantità sul vino ({rate}%)",
+      "shipping": "Spedizione",
+      "shippingQuoted": "Indicata in pro-forma",
+      "free": "Gratuita",
+      "vat": "IVA {rate}%",
+      "total": "Totale",
+      "totalTrade": "Totale",
+      "inclVat": "Prezzi comprensivi di IVA e accise.",
+      "regime": {
+        "domestic": "IVA italiana applicata: 22% sul vino, aliquote ridotte sugli alimentari.",
+        "reverse_charge": "Cessione intracomunitaria non imponibile ai sensi dell'art. 41 D.L. 331/1993 — inversione contabile: IVA assolta dal cliente (art. 196 Direttiva 2006/112/CE).",
+        "export": "Esportazione extra UE, operazione non imponibile ai sensi dell'art. 8 D.P.R. 633/1972. IVA all'importazione e dazi a carico del destinatario."
+      }
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "titleTrade": "Richiesta d'ordine",
+    "contact": "Contatti",
+    "deliveryTrade": "Referente per la consegna",
+    "name": "Nome e cognome",
+    "email": "E-mail",
+    "phone": "Telefono (facoltativo)",
+    "address": "Indirizzo di consegna",
+    "street": "Via e numero civico",
+    "city": "Città",
+    "postcode": "CAP",
+    "country": "Paese",
+    "notesTitle": "Note",
+    "notes": "Note per la consegna (facoltative)",
+    "notesTrade": "Note per il nostro ufficio commerciale (facoltative): fasce orarie, allocazioni…",
+    "ageConfirm": "Confermo di avere almeno 18 anni e che la consegna sarà ricevuta da una persona maggiorenne.",
+    "submit": "Paga {total}",
+    "submitTrade": "Invia richiesta d'ordine",
+    "sending": "Invio in corso…",
+    "mockNote": "In questa demo il pagamento è simulato: nessuna carta viene addebitata. Stripe si attiva senza modificare questa pagina.",
+    "tradeNote": "Nessun pagamento ora. Verifichiamo la disponibilità e ti inviamo una pro-forma da confermare.",
+    "errors": {
+      "required": "Campo obbligatorio",
+      "email": "Inserisci un'e-mail valida",
+      "emptyCart": "Il carrello è vuoto.",
+      "tradeSession": "Sei collegato come trade: ricarica la pagina.",
+      "notTrade": "Accedi con un account trade approvato.",
+      "rules": "Il carrello non rispetta ancora le regole trade."
+    }
+  },
+  "order": {
+    "kicker": "Grazie",
+    "title": "Il tuo ordine è confermato.",
+    "body": "Invieremo una conferma a {email}.",
+    "tradeKicker": "Richiesta d'ordine ricevuta",
+    "tradeTitle": "Grazie — ce ne occupiamo noi.",
+    "tradeBody": "Confermeremo disponibilità e consegna entro un giorno lavorativo a {email}. Qui sotto trovi la pro-forma.",
+    "confirmation": "Conferma d'ordine",
+    "proforma": "Fattura pro-forma",
+    "billTo": "Cliente",
+    "shipTo": "Consegna a",
+    "vatNumber": "P.IVA",
+    "lines": "Righe d'ordine",
+    "product": "Prodotto",
+    "qty": "Q.tà",
+    "unit": "Prezzo unitario",
+    "amount": "Importo",
+    "subtotal": "Subtotale",
+    "subtotalEx": "Subtotale (IVA esclusa)",
+    "discount": "Sconto quantità",
+    "shipping": "Spedizione",
+    "shippingQuoted": "Da quotare",
+    "free": "Gratuita",
+    "vat": "IVA {rate}%",
+    "total": "Totale",
+    "inclVat": "Prezzi comprensivi di IVA e accise.",
+    "fx": "Importi convertiti da EUR al cambio 1 EUR = {rate} GBP.",
+    "continue": "Continua gli acquisti",
+    "print": "Stampa",
+    "printProforma": "Stampa / salva PDF",
+    "status": {
+      "pending_payment": "In attesa di pagamento",
+      "paid_simulated": "Pagato (simulato)",
+      "paid": "Pagato",
+      "draft": "Bozza — in attesa di conferma",
+      "confirmed": "Confermato",
+      "cancelled": "Annullato"
+    },
+    "regime": {
+      "domestic": "IVA italiana applicata: 22% sul vino, aliquote ridotte sugli alimentari.",
+      "reverse_charge": "Cessione intracomunitaria non imponibile ai sensi dell'art. 41 D.L. 331/1993 — inversione contabile: IVA assolta dal cliente (art. 196 Direttiva 2006/112/CE).",
+      "export": "Esportazione extra UE, operazione non imponibile ai sensi dell'art. 8 D.P.R. 633/1972. IVA all'importazione e dazi a carico del destinatario."
+    }
   }
 }

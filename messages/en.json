@@ -26,9 +26,10 @@
   "topbar": {
     "language": "Language",
     "currency": "Currency",
-    "shippingNote": "Free delivery over €120 · UK & Northern Europe",
+    "shippingNote": "Free delivery over {amount} · UK & Northern Europe",
     "tradeLogin": "Trade login",
-    "tradeArea": "Trade account"
+    "tradeArea": "Trade account",
+    "tradeNote": "Trade prices ex VAT · mixed cases of 6"
   },
   "footer": {
     "shop": "Shop",
@@ -251,5 +252,118 @@
     "title": "This page has gone quiet.",
     "body": "It may have moved, or never existed.",
     "cta": "Back to the catalogue"
+  },
+  "cart": {
+    "title": "Your cart",
+    "loading": "Loading your cart…",
+    "empty": "Your cart is empty.",
+    "continue": "Continue shopping",
+    "items": "Items",
+    "remove": "Remove",
+    "quantityFor": "Quantity for {name}",
+    "caseOf": "Case of {size}",
+    "summaryTitle": "Summary",
+    "tradeSummary": "Trade order",
+    "bottles": "{count, plural, one {# bottle of wine} other {# bottles of wine}}",
+    "freeShippingLeft": "Add {amount} more for free delivery (from {threshold}).",
+    "checkout": "Checkout",
+    "requestOrder": "Continue to order request",
+    "issues": {
+      "minWine": "Trade orders need at least {min} bottles of wine (you have {current}).",
+      "wineCase": "Wine is sold in cases of {size}: add {missing, plural, one {# more bottle} other {# more bottles}} to complete the case.",
+      "pantryCase": "{name} is sold in cases of {size}."
+    },
+    "summary": {
+      "subtotal": "Subtotal",
+      "subtotalEx": "Subtotal (ex VAT)",
+      "discount": "Volume discount on wine ({rate}%)",
+      "shipping": "Delivery",
+      "shippingQuoted": "Quoted on pro-forma",
+      "free": "Free",
+      "vat": "VAT {rate}%",
+      "total": "Total",
+      "totalTrade": "Total",
+      "inclVat": "Prices include VAT and excise duty.",
+      "regime": {
+        "domestic": "Italian VAT applied: 22% on wine, reduced rates on food.",
+        "reverse_charge": "Intra-Community supply, VAT exempt under Art. 41 D.L. 331/1993 — reverse charge: VAT to be accounted for by the customer (Art. 196 Directive 2006/112/EC).",
+        "export": "Export outside the EU, not subject to Italian VAT (Art. 8 D.P.R. 633/1972). Import VAT and duties are due in the country of destination."
+      }
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "titleTrade": "Order request",
+    "contact": "Contact",
+    "deliveryTrade": "Contact for this delivery",
+    "name": "Full name",
+    "email": "E-mail",
+    "phone": "Phone (optional)",
+    "address": "Delivery address",
+    "street": "Street and number",
+    "city": "City",
+    "postcode": "Postcode",
+    "country": "Country",
+    "notesTitle": "Notes",
+    "notes": "Delivery notes (optional)",
+    "notesTrade": "Notes for our sales team (optional): delivery window, allocations…",
+    "ageConfirm": "I confirm I am 18 or older and that someone of legal drinking age will receive the delivery.",
+    "submit": "Pay {total}",
+    "submitTrade": "Send order request",
+    "sending": "Sending…",
+    "mockNote": "Payment is simulated in this demo: no card is charged. Stripe can be enabled without changing this page.",
+    "tradeNote": "No payment now. We will check availability and send you a pro-forma invoice to confirm.",
+    "errors": {
+      "required": "Required",
+      "email": "Enter a valid e-mail address",
+      "emptyCart": "Your cart is empty.",
+      "tradeSession": "You are signed in as trade: please reload the page.",
+      "notTrade": "Please sign in with an approved trade account.",
+      "rules": "Your cart does not meet the trade rules yet."
+    }
+  },
+  "order": {
+    "kicker": "Thank you",
+    "title": "Your order is confirmed.",
+    "body": "We will send a confirmation to {email}.",
+    "tradeKicker": "Order request received",
+    "tradeTitle": "Thank you — we're on it.",
+    "tradeBody": "We will confirm availability and delivery within one working day at {email}. Your pro-forma is below.",
+    "confirmation": "Order confirmation",
+    "proforma": "Pro-forma invoice",
+    "billTo": "Customer",
+    "shipTo": "Deliver to",
+    "vatNumber": "VAT",
+    "lines": "Order lines",
+    "product": "Product",
+    "qty": "Qty",
+    "unit": "Unit price",
+    "amount": "Amount",
+    "subtotal": "Subtotal",
+    "subtotalEx": "Subtotal (ex VAT)",
+    "discount": "Volume discount",
+    "shipping": "Delivery",
+    "shippingQuoted": "To be quoted",
+    "free": "Free",
+    "vat": "VAT {rate}%",
+    "total": "Total",
+    "inclVat": "Prices include VAT and excise duty.",
+    "fx": "Amounts converted from EUR at 1 EUR = {rate} GBP.",
+    "continue": "Continue shopping",
+    "print": "Print",
+    "printProforma": "Print / save as PDF",
+    "status": {
+      "pending_payment": "Awaiting payment",
+      "paid_simulated": "Paid (simulated)",
+      "paid": "Paid",
+      "draft": "Draft — awaiting confirmation",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    },
+    "regime": {
+      "domestic": "Italian VAT applied: 22% on wine, reduced rates on food.",
+      "reverse_charge": "Intra-Community supply, VAT exempt under Art. 41 D.L. 331/1993 — reverse charge: VAT to be accounted for by the customer (Art. 196 Directive 2006/112/EC).",
+      "export": "Export outside the EU, not subject to Italian VAT (Art. 8 D.P.R. 633/1972). Import VAT and duties are due in the country of destination."
+    }
   }
 }
