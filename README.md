@@ -8,12 +8,14 @@ Stack: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · next-intl · 
 
 ## 1. Avvio in locale
 
-Requisiti: Node.js 20 o superiore (testato con Node 22).
+> Per **mettere il sito online** senza competenze tecniche segui la guida [GUIDA-ONLINE.md](./GUIDA-ONLINE.md). Questa sezione serve solo a chi vuole farlo girare sul proprio computer.
+
+Requisiti: Node.js 20 o superiore (testato con Node 22) e un database **Postgres**: uno locale, oppure un branch "dev" gratuito su [Neon](https://neon.tech).
 
 ```bash
 npm install            # installa le dipendenze e genera il client Prisma
-cp .env.example .env   # poi imposta AUTH_SECRET (es. `npx auth secret`)
-npm run setup          # crea il database SQLite (prisma/dev.db) e gli account demo
+cp .env.example .env   # poi imposta DATABASE_URL, DATABASE_URL_UNPOOLED e AUTH_SECRET
+npm run setup          # crea le tabelle (migrazioni) e gli account demo
 npm run dev            # http://localhost:3000
 ```
 
@@ -25,6 +27,7 @@ Altri comandi:
 | `npm test` | test unitari (prezzi B2C/B2B, IVA, validazione partite IVA) |
 | `npm run lint` / `npm run typecheck` | ESLint e TypeScript |
 | `npm run db:seed` | ricrea gli account demo, se mancano |
+| `npm run db:migrate` | dopo una modifica a `prisma/schema.prisma`, crea una nuova migrazione |
 
 All'ingresso compare l'**age gate 18+**. La risposta resta memorizzata in un cookie per un anno.
 
@@ -155,7 +158,7 @@ Se VIES o HMRC non rispondono (timeout di 8 secondi), la richiesta viene comunqu
 ## 5. Approvare un cliente B2B
 
 1. Il cliente compila il modulo in **/trade**. L'account viene creato con `approved = false`: chi prova ad accedere vede il messaggio "in attesa di approvazione".
-2. Accedi con un account admin (in sviluppo `admin@lento.local` / `demo-admin`) e vai su **/en/admin** (oppure clicca "Admin" nell'area Trade).
+2. Accedi con un account admin (online: l'e-mail e la password impostate in `ADMIN_EMAIL` / `ADMIN_PASSWORD`; in sviluppo `admin@lento.local` / `demo-admin`) e vai su **/en/admin** (oppure clicca "Admin" nell'area Trade).
 3. Ogni account mostra l'esito della verifica IVA (VIES ✓, HMRC ✓, solo formato, non verificata). Premi **Approva**. Con **Revoca** l'accesso si toglie subito, perché la sessione rilegge l'account dal database a ogni richiesta.
 4. Nella stessa pagina puoi cambiare lo stato delle richieste d'ordine trade (bozza, confermato, annullato).
 
@@ -173,10 +176,15 @@ Per creare un nuovo amministratore: imposta `role = "admin"` e `approved = true`
 
 ## 7. Deploy su Vercel
 
-1. Crea un database Postgres (Vercel Postgres o Neon). In `prisma/schema.prisma` cambia `provider = "sqlite"` in `provider = "postgresql"`.
-2. Su Vercel imposta le variabili d'ambiente: `DATABASE_URL`, `AUTH_SECRET`, `NEXT_PUBLIC_SITE_URL`, `GBP_PER_EUR` e, se servono, `HMRC_*` e `PAYMENT_PROVIDER`.
-3. Il primo deploy esegue `postinstall` → `prisma generate`. Per creare le tabelle lancia una volta `npx prisma db push` con la `DATABASE_URL` di produzione (in seguito conviene passare a `prisma migrate`).
-4. In produzione crea l'account admin a mano: il seed contiene password demo e va usato solo in sviluppo.
+La guida passo passo, pensata per chi non è tecnico, è in **[GUIDA-ONLINE.md](./GUIDA-ONLINE.md)**. In sintesi:
+
+- Il database è **Postgres** (Neon, collegato dalla scheda Storage di Vercel). L'integrazione imposta da sola `DATABASE_URL` (connessione con pooling, usata dal sito) e `DATABASE_URL_UNPOOLED` (connessione diretta, usata dalle migrazioni).
+- Vercel esegue `npm run vercel-build` (`scripts/vercel-build.mjs`), che aggiorna l'elenco delle foto, applica le migrazioni (`prisma migrate deploy`), crea l'amministratore e infine fa la build di Next.js. Se il database non è ancora collegato salta le migrazioni con un avviso, così il primo deploy riesce comunque.
+- L'amministratore viene creato al deploy dalle variabili `ADMIN_EMAIL` e `ADMIN_PASSWORD` (almeno 10 caratteri), solo se non esiste già: cambiare la password nelle variabili in seguito **non** la aggiorna. Gli account demo non vengono mai creati su Vercel (salvo `SEED_DEMO=true`).
+- Variabili da impostare a mano: `AUTH_SECRET`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`. Facoltative: `NEXT_PUBLIC_SITE_URL` (quando colleghi un dominio tuo; senza, si usa il dominio di produzione Vercel), `GBP_PER_EUR`, `HMRC_*`, `PAYMENT_PROVIDER`.
+- `vercel.json` fa girare le funzioni a Francoforte (`fra1`): scegli la stessa regione per il database Neon.
+- Ogni modifica unita nel branch `main` viene pubblicata automaticamente; ogni pull request riceve un'anteprima.
+- Per modificare il database: cambia `prisma/schema.prisma`, lancia `npm run db:migrate` in locale e fai il commit della cartella `prisma/migrations`; al deploy successivo Vercel la applica.
 
 Nota tecnica: Next.js 16 crea i progetti con `cacheComponents` attivo. Qui è disattivato in `next.config.ts`, perché quasi ogni pagina mostra prezzi che dipendono dai cookie (valuta, sessione trade). Il rendering dinamico classico è più semplice e prevedibile.
 
@@ -210,5 +218,6 @@ Nota tecnica: Next.js 16 crea i progetti con `cacheComponents` attivo. Qui è di
 ### Altro
 - Sostituire i dati aziendali segnaposto (ragione sociale, P.IVA, codice accisa) nella pro-forma e nelle pagine legali, e far rivedere le pagine legali da un legale.
 - Salvare gli importi in centesimi interi o come `Decimal` invece di `Float`.
+- Piano Vercel: il piano gratuito *Hobby* è per uso personale e non commerciale; un negozio che vende davvero richiede il piano *Pro*.
 - Foto vere di prodotti, produttori e storie.
 - Banner cookie, se in futuro si aggiungono strumenti di analisi o marketing.

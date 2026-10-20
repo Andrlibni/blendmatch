@@ -1,12 +1,15 @@
-// SQLite in development. For production (Vercel) switch the provider to
-// "postgresql" and point DATABASE_URL to Neon / Vercel Postgres — see README.
+// Postgres everywhere (Neon on Vercel). DATABASE_URL is the pooled connection
+// used by the app; DATABASE_URL_UNPOOLED is the direct one used by migrations.
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  // "rhel-openssl-3.0.x" is the runtime of Vercel serverless functions.
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 model TradeAccount {

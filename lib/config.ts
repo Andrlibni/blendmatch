@@ -1,7 +1,11 @@
 /** Business configuration. Values with an env override can be tuned per deploy. */
 
 export const SITE_NAME = "Lento";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
 
 export const currencies = ["EUR", "GBP"] as const;
 export type Currency = (typeof currencies)[number];
