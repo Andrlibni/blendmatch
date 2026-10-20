@@ -149,3 +149,62 @@ export async function placeRetailOrder(
   // External provider (Stripe): leave the site for the hosted checkout page.
   nextRedirect(result.redirectUrl);
 }
+
+const tradeSchema = addressSchema.omit({ email: true, country: true }).extend({
+  email: z.email("email").max(200),
+});
+
+/** Trade checkout: no payment, creates a draft order and its pro-forma. */
+export async function placeTradeOrder(
+  _prev: CheckoutState,
+  formData: FormData,
+): Promise<CheckoutState> {
+  const shop = await getShopContext();
+  const trade = shop.trade;
+  if (!trade) return { error: "notTrade" };
+
+  const cart = parseCart(formData.get("cart"));
+  if (!cart || cart.length === 0) return { error: "emptyCart" };
+
+  const parsed = tradeSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return { fieldErrors: fieldErrors(parsed.error) };
+
+  // The delivery country is always the one the VAT number belongs to.
+  const summary = computeCart(cart, { kind: "trade", country: trade.country });
+  if (summary.lines.length === 0) return { error: "emptyCart" };
+  if (summary.issues.length > 0) return { error: "rules" };
+
+  const data = parsed.data;
+  const order = await db.order.create({
+    data: {
+      number: await nextOrderNumber("PF"),
+      kind: "trade",
+      status: "draft",
+      accountId: trade.accountId,
+      email: data.email,
+      name: data.name,
+      company: trade.company,
+      vatNumber: trade.vatNumber,
+      phone: data.phone || null,
+      address: data.address,
+      city: data.city,
+      postcode: data.postcode,
+      country: trade.country,
+      notes: data.notes || null,
+      currency: shop.currency,
+      rate: shop.rate,
+      vatRegime: summary.regime,
+      subtotal: summary.subtotal,
+      discount: summary.discount,
+      shipping: null,
+      vatTotal: summary.vatTotal,
+      vatBreakdown: JSON.stringify(summary.vat),
+      total: summary.total,
+      lines: JSON.stringify(lineSnapshot(summary)),
+    },
+  });
+
+  const locale = await getLocale();
+  redirect({ href: `/order/${order.id}?placed=1`, locale });
+  return {};
+}

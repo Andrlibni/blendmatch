@@ -11,7 +11,7 @@ export function OrderSummary({ summary }: { summary: CartSummary }) {
   const trade = summary.mode === "trade";
 
   const row = (label: string, value: string, strong = false) => (
-    <div className={`flex items-baseline justify-between gap-4 py-2 ${strong ? "text-base font-medium" : "text-sm"}`}>
+    <div key={label} className={`flex items-baseline justify-between gap-4 py-2 ${strong ? "text-base font-medium" : "text-sm"}`}>
       <dt>{label}</dt>
       <dd className="tabular-nums">{value}</dd>
     </div>

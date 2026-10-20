@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getTradeInfo } from "@/lib/shop-context";
-import { placeRetailOrder } from "@/app/actions/orders";
+import { placeRetailOrder, placeTradeOrder } from "@/app/actions/orders";
 import { CheckoutForm } from "@/components/cart/CheckoutForm";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/checkout">): Promise<Metadata> {
@@ -17,7 +17,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/chec
   return (
     <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
       <h1 className="display pb-10 pt-12 text-5xl sm:pt-16">{trade ? t("titleTrade") : t("title")}</h1>
-      <CheckoutForm action={placeRetailOrder} defaults={trade ? { email: trade.email, company: trade.company, country: trade.country } : {}} />
+      <CheckoutForm action={trade ? placeTradeOrder : placeRetailOrder} defaults={trade ? { email: trade.email, company: trade.company, country: trade.country } : {}} />
     </div>
   );
 }

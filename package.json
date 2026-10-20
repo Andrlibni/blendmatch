@@ -13,7 +13,8 @@
     "postinstall": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
-    "setup": "prisma db push && tsx prisma/seed.ts"
+    "setup": "prisma db push && tsx prisma/seed.ts",
+    "test": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
