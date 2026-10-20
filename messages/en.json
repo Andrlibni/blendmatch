@@ -71,7 +71,36 @@
   },
   "product": {
     "new": "New",
-    "presidio": "Presìdio"
+    "presidio": "Presìdio",
+    "quantity": "Quantity",
+    "add": "Add to cart",
+    "added": "{qty, plural, one {# added to your cart.} other {# added to your cart.}}",
+    "viewCart": "View cart",
+    "tradeCase": "Trade: cases of {size}, mixable across all wines",
+    "tradeCasePantry": "Trade: sold in cases of {size}",
+    "retailIncl": "VAT and duty included",
+    "tastingNote": "Tasting note",
+    "description": "Description",
+    "pairing": "With",
+    "specsTitle": "Technical sheet",
+    "specs": {
+      "grapes": "Grape",
+      "region": "Region",
+      "vintage": "Vintage",
+      "soil": "Soil",
+      "vinification": "Vinification",
+      "so2": "Total SO₂",
+      "abv": "Alcohol",
+      "format": "Format",
+      "presidio": "Slow Food Presìdio",
+      "ingredients": "Ingredients",
+      "shelfLife": "Shelf life"
+    },
+    "storyKicker": "The story",
+    "storyTitle": "From {producer}",
+    "meetProducer": "Meet the producer",
+    "readStory": "Read “{title}”",
+    "related": "You may also like"
   },
   "shop": {
     "title": "The catalogue",
@@ -132,5 +161,95 @@
       "title": "Nothing here — yet.",
       "body": "Try removing a filter or searching for something else."
     }
+  },
+  "producers": {
+    "kicker": "The people behind the bottles",
+    "title": "Producers",
+    "description": "We work with a few families and cooperatives we know personally: growers who farm without chemicals, and the keepers of foods protected by Slow Food Presìdi.",
+    "founded": "Founded",
+    "hectares": "Hectares",
+    "products": "Products",
+    "discover": "Discover",
+    "region": "Region",
+    "farming": "Farming",
+    "range": "The range",
+    "readStory": "Read “{title}”",
+    "partnersTitle": "Presìdi partners",
+    "partnersBody": "Small producers who belong to Slow Food Presìdi: they follow shared rules to keep a traditional food alive, and sell it at a fair price."
+  },
+  "stories": {
+    "kicker": "Journal",
+    "title": "Stories",
+    "description": "Where our wines and foods come from, and the people who make them.",
+    "minutes": "{count} min read",
+    "read": "Read the story",
+    "producer": "More about {name}",
+    "inStory": "In this story",
+    "more": "More stories",
+    "all": "All stories"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Natural wine & Slow Food Presìdi",
+      "title": "Wines that take their time.",
+      "alt": "A vineyard in the late afternoon",
+      "ctaStories": "Read our stories",
+      "ctaShop": "Shop the catalogue",
+      "lead": "Lento means slow. We bring natural wines from small Italian growers, and foods kept alive by Slow Food Presìdi, to tables in the UK and Northern Europe — with the stories of the people who make them."
+    },
+    "manifesto": {
+      "kicker": "What we look for",
+      "growers": {
+        "title": "Small growers",
+        "body": "Families farming a few hectares organically, by hand, in places they know stone by stone."
+      },
+      "cellar": {
+        "title": "Nothing added",
+        "body": "Native yeasts, no fining or filtering, and total sulphur below 50 mg/l — often far below."
+      },
+      "presidi": {
+        "title": "Foods worth saving",
+        "body": "Traditional foods from Slow Food Presìdi, bought directly at the price their makers set."
+      }
+    },
+    "stories": {
+      "kicker": "From the land",
+      "title": "Stories behind the bottles",
+      "all": "All stories",
+      "inThisStory": "In this story"
+    },
+    "selection": {
+      "kicker": "To begin",
+      "title": "A first selection",
+      "all": "All wines"
+    },
+    "presidi": {
+      "kicker": "Slow Food Presìdi",
+      "title": "The pantry",
+      "body": "Colatura from Cetara, Piennolo tomatoes from Vesuvius, cicerchia from the Marche hills: foods made in tiny quantities by people who refused to let them disappear.",
+      "story": "Why we import Presìdi",
+      "shop": "Shop the pantry"
+    },
+    "producers": {
+      "kicker": "The people",
+      "title": "Our producers",
+      "all": "All producers"
+    },
+    "trade": {
+      "kicker": "Trade",
+      "title": "For restaurants, wine bars and shops",
+      "body": "Trade prices ex VAT, mixed cases and a pro-forma for every order. We deliver across the UK, Scandinavia, the Benelux, Germany, Austria and Ireland.",
+      "apply": "Apply for a trade account",
+      "login": "Trade login",
+      "point1": "Trade prices ex VAT on every product",
+      "point2": "Wine in mixable cases of {size} · minimum {min} bottles",
+      "point3": "{rate}% off wine from {from} bottles",
+      "point4": "EU reverse charge and UK/Norway export handled for you"
+    }
+  },
+  "notFound": {
+    "title": "This page has gone quiet.",
+    "body": "It may have moved, or never existed.",
+    "cta": "Back to the catalogue"
   }
 }

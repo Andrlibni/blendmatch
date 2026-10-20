@@ -71,7 +71,36 @@
   },
   "product": {
     "new": "Novità",
-    "presidio": "Presìdio"
+    "presidio": "Presìdio",
+    "quantity": "Quantità",
+    "add": "Aggiungi al carrello",
+    "added": "{qty, plural, one {# aggiunto al carrello.} other {# aggiunti al carrello.}}",
+    "viewCart": "Vai al carrello",
+    "tradeCase": "Trade: casse da {size}, mixabili tra tutti i vini",
+    "tradeCasePantry": "Trade: venduto in casse da {size}",
+    "retailIncl": "IVA e accise incluse",
+    "tastingNote": "Nota di degustazione",
+    "description": "Descrizione",
+    "pairing": "Con",
+    "specsTitle": "Scheda tecnica",
+    "specs": {
+      "grapes": "Vitigno",
+      "region": "Regione",
+      "vintage": "Annata",
+      "soil": "Terreno",
+      "vinification": "Vinificazione",
+      "so2": "SO₂ totale",
+      "abv": "Alcol",
+      "format": "Formato",
+      "presidio": "Presìdio Slow Food",
+      "ingredients": "Ingredienti",
+      "shelfLife": "Conservazione"
+    },
+    "storyKicker": "La storia",
+    "storyTitle": "Da {producer}",
+    "meetProducer": "Conosci il produttore",
+    "readStory": "Leggi “{title}”",
+    "related": "Potrebbe piacerti anche"
   },
   "shop": {
     "title": "Il catalogo",
@@ -135,5 +164,95 @@
       "title": "Nessun risultato.",
       "body": "Prova a rimuovere un filtro o a cercare altro."
     }
+  },
+  "producers": {
+    "kicker": "Le persone dietro le bottiglie",
+    "title": "Produttori",
+    "description": "Lavoriamo con poche famiglie e cooperative che conosciamo di persona: vignaioli che coltivano senza chimica e custodi di cibi tutelati dai Presìdi Slow Food.",
+    "founded": "Fondazione",
+    "hectares": "Ettari",
+    "products": "Prodotti",
+    "discover": "Scopri",
+    "region": "Regione",
+    "farming": "Agricoltura",
+    "range": "I prodotti",
+    "readStory": "Leggi “{title}”",
+    "partnersTitle": "Produttori dei Presìdi",
+    "partnersBody": "Piccoli produttori che aderiscono ai Presìdi Slow Food: seguono un disciplinare comune per tenere in vita un cibo tradizionale e venderlo a un prezzo giusto."
+  },
+  "stories": {
+    "kicker": "Journal",
+    "title": "Storie",
+    "description": "Da dove vengono i nostri vini e i nostri cibi, e chi li fa.",
+    "minutes": "{count} min di lettura",
+    "read": "Leggi la storia",
+    "producer": "Scopri {name}",
+    "inStory": "In questa storia",
+    "more": "Altre storie",
+    "all": "Tutte le storie"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Vino naturale e Presìdi Slow Food",
+      "title": "Vini che si prendono il loro tempo.",
+      "alt": "Una vigna nel tardo pomeriggio",
+      "ctaStories": "Leggi le storie",
+      "ctaShop": "Vai al catalogo",
+      "lead": "Lento vuol dire senza fretta. Portiamo i vini naturali di piccoli vignaioli italiani, e i cibi salvati dai Presìdi Slow Food, sulle tavole del Regno Unito e del Nord Europa — insieme alle storie di chi li fa."
+    },
+    "manifesto": {
+      "kicker": "Cosa cerchiamo",
+      "growers": {
+        "title": "Piccoli vignaioli",
+        "body": "Famiglie che coltivano pochi ettari in biologico, a mano, in luoghi che conoscono pietra per pietra."
+      },
+      "cellar": {
+        "title": "Niente di aggiunto",
+        "body": "Lieviti indigeni, niente chiarifiche né filtrazioni, solforosa totale sotto i 50 mg/l — spesso molto meno."
+      },
+      "presidi": {
+        "title": "Cibi da salvare",
+        "body": "Cibi tradizionali dei Presìdi Slow Food, acquistati direttamente al prezzo stabilito da chi li produce."
+      }
+    },
+    "stories": {
+      "kicker": "Dalla terra",
+      "title": "Le storie dietro le bottiglie",
+      "all": "Tutte le storie",
+      "inThisStory": "In questa storia"
+    },
+    "selection": {
+      "kicker": "Per cominciare",
+      "title": "Una prima selezione",
+      "all": "Tutti i vini"
+    },
+    "presidi": {
+      "kicker": "Presìdi Slow Food",
+      "title": "La dispensa",
+      "body": "La colatura di Cetara, il Piennolo del Vesuvio, la cicerchia delle colline marchigiane: cibi prodotti in quantità minime da persone che non li hanno lasciati scomparire.",
+      "story": "Perché importiamo i Presìdi",
+      "shop": "Vai alla dispensa"
+    },
+    "producers": {
+      "kicker": "Le persone",
+      "title": "I nostri produttori",
+      "all": "Tutti i produttori"
+    },
+    "trade": {
+      "kicker": "Trade",
+      "title": "Per ristoranti, enoteche e negozi",
+      "body": "Prezzi trade IVA esclusa, casse miste e una pro-forma per ogni ordine. Consegniamo in Regno Unito, Scandinavia, Benelux, Germania, Austria e Irlanda.",
+      "apply": "Richiedi un account trade",
+      "login": "Accesso Trade",
+      "point1": "Prezzi trade IVA esclusa su tutti i prodotti",
+      "point2": "Vino in casse mixabili da {size} · minimo {min} bottiglie",
+      "point3": "{rate}% di sconto sul vino da {from} bottiglie",
+      "point4": "Reverse charge UE ed esportazione UK/Norvegia gestiti da noi"
+    }
+  },
+  "notFound": {
+    "title": "Questa pagina non c'è.",
+    "body": "Forse è stata spostata, o non è mai esistita.",
+    "cta": "Torna al catalogo"
   }
 }

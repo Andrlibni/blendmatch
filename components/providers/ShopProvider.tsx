@@ -12,6 +12,7 @@ import {
 import { useLocale } from "next-intl";
 import type { ShopContext } from "@/lib/shop-context";
 import { formatMoney } from "@/lib/format";
+import type { PricingMode } from "@/lib/pricing";
 
 export type CartLine = { slug: string; qty: number };
 
@@ -116,4 +117,12 @@ export function useShop() {
   const ctx = useContext(Ctx);
   if (!ctx) throw new Error("useShop must be used inside <ShopProvider>");
   return ctx;
+}
+
+export function usePricingMode(): PricingMode {
+  const { trade } = useShop();
+  return useMemo(
+    () => (trade ? { kind: "trade", country: trade.country } : { kind: "retail" }),
+    [trade],
+  );
 }
