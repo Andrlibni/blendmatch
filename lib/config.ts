@@ -49,3 +49,5 @@ export function isCountryCode(value: unknown): value is CountryCode {
 export function countryName(code: string) {
   return countries.find((c) => c.code === code)?.name ?? code;
 }
+
+export const businessTypes = ["restaurant", "wine_bar", "wine_shop", "deli", "distributor", "other"] as const;

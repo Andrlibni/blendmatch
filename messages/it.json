@@ -62,6 +62,125 @@
         "reverse_charge": "Reverse charge UE 0%",
         "export": "Esportazione 0% IVA"
       }
+    },
+    "page": {
+      "kicker": "Per i professionisti",
+      "title": "Trade",
+      "lead": "Ristoranti, enoteche, wine bar e gastronomie nel Regno Unito e nel Nord Europa acquistano da Lento a prezzi trade, in casse miste, con l'IVA gestita per il loro paese.",
+      "termsTitle": "Come funziona",
+      "terms": {
+        "prices": {
+          "title": "Prezzi trade",
+          "body": "Dopo l'approvazione tutti i prezzi del sito passano a trade, IVA esclusa, con accanto il prezzo al pubblico."
+        },
+        "cases": {
+          "title": "Casse miste",
+          "body": "Il vino è venduto in casse da {size}, componibili liberamente con tutta la gamma. Ordine minimo: {min} bottiglie di vino. La dispensa segue il proprio formato cassa."
+        },
+        "discount": {
+          "title": "Sconto quantità",
+          "body": "{rate}% su tutto il vino da {from} bottiglie nello stesso ordine, applicato automaticamente nel carrello."
+        },
+        "vat": {
+          "title": "IVA",
+          "body": "Italia: IVA 22%. UE: cessione intracomunitaria con reverse charge (0%). Regno Unito e Norvegia: esportazione, IVA 0%; IVA all'importazione e dazi a destino."
+        },
+        "orders": {
+          "title": "Richieste d'ordine",
+          "body": "Nessun pagamento online: invii una richiesta d'ordine, confermiamo la disponibilità e ti mandiamo una pro-forma. Pagamento con bonifico, 30 giorni per i clienti abituali."
+        },
+        "delivery": {
+          "title": "Consegna",
+          "body": "Spediamo da un deposito fiscale in Italia, in sospensione d'accisa quando previsto. Il trasporto è indicato in pro-forma; gratuito da 60 bottiglie."
+        }
+      },
+      "applyKicker": "Nuovo account",
+      "applyTitle": "Richiedi un account trade",
+      "applyBody": "Raccontaci la tua attività. Verifichiamo la partita IVA nei registri ufficiali e controlliamo a mano ogni richiesta, di solito entro un giorno lavorativo.",
+      "steps": {
+        "one": "Invia il modulo con la tua partita IVA.",
+        "two": "La verifichiamo con VIES (UE) o HMRC (UK) e valutiamo la richiesta.",
+        "three": "Dopo l'approvazione accedi per vedere i prezzi trade e inviare richieste d'ordine."
+      },
+      "already": "Hai già un account?",
+      "login": "Accedi",
+      "account": {
+        "kicker": "Il tuo account trade",
+        "country": "Paese",
+        "regime": "Regime IVA",
+        "shop": "Acquista a prezzi trade",
+        "admin": "Admin",
+        "orders": "Le tue richieste d'ordine",
+        "noOrders": "Nessun ordine per ora."
+      }
+    },
+    "apply": {
+      "business": "La tua attività",
+      "company": "Ragione sociale",
+      "businessType": "Tipo di attività",
+      "choose": "Scegli…",
+      "types": {
+        "restaurant": "Ristorante",
+        "wine_bar": "Wine bar",
+        "wine_shop": "Enoteca",
+        "deli": "Gastronomia / negozio",
+        "distributor": "Distributore",
+        "other": "Altro"
+      },
+      "country": "Paese",
+      "vatNumber": "Partita IVA / VAT number",
+      "vatHint": "Con o senza prefisso del paese.",
+      "checking": "Verifica nel registro ufficiale…",
+      "vatResult": {
+        "vies": "Confermata da VIES {name}",
+        "hmrc": "Confermata da HMRC {name}",
+        "format": "Formato e codice di controllo validi",
+        "unverified": "Formato valido — il registro non risponde, verificheremo a mano"
+      },
+      "contact": "Referente",
+      "contactName": "Nome e cognome",
+      "email": "E-mail aziendale",
+      "emailHint": "Usa l'indirizzo aziendale, non quello personale.",
+      "phone": "Telefono (facoltativo)",
+      "access": "Accesso",
+      "password": "Password",
+      "passwordHint": "Almeno 8 caratteri.",
+      "passwordConfirm": "Ripeti la password",
+      "terms": "Accetto le <link>condizioni di vendita</link> e confermo di acquistare per la mia attività.",
+      "submit": "Invia la richiesta",
+      "sending": "Verifica e invio…",
+      "successKicker": "Richiesta ricevuta",
+      "successTitle": "Grazie.",
+      "successBody": "Il tuo account è in attesa di approvazione. Ti scriveremo appena sarà attivo, di solito entro un giorno lavorativo.",
+      "successUnverified": "Il registro IVA non ha risposto durante la richiesta: verificheremo la partita IVA a mano.",
+      "browse": "Sfoglia il catalogo",
+      "errors": {
+        "required": "Campo obbligatorio",
+        "email": "Inserisci un'e-mail valida",
+        "password": "Almeno 8 caratteri",
+        "mismatch": "Le password non coincidono",
+        "taken": "Esiste già un account con questa e-mail",
+        "vat_format": "Il formato non è valido per il paese selezionato",
+        "vat_checksum": "Partita IVA non valida: il codice di controllo non corrisponde",
+        "vat_notFound": "Questa partita IVA non risulta attiva"
+      }
+    },
+    "login": {
+      "kicker": "Trade",
+      "title": "Accesso Trade",
+      "body": "Accedi con e-mail e password del tuo account trade approvato per vedere i prezzi trade e inviare richieste d'ordine.",
+      "email": "E-mail",
+      "password": "Password",
+      "submit": "Accedi",
+      "signingIn": "Accesso…",
+      "noAccount": "Non hai un account?",
+      "noAccountBody": "Ristoranti, enoteche e negozi possono richiedere un account trade in un paio di minuti.",
+      "apply": "Richiedilo ora",
+      "demoTitle": "Account demo (solo sviluppo)",
+      "errors": {
+        "invalid": "E-mail o password non riconosciute.",
+        "pending": "Il tuo account è ancora in attesa di approvazione. Ti scriveremo appena sarà attivo."
+      }
     }
   },
   "price": {
@@ -368,5 +487,29 @@
       "reverse_charge": "Cessione intracomunitaria non imponibile ai sensi dell'art. 41 D.L. 331/1993 — inversione contabile: IVA assolta dal cliente (art. 196 Direttiva 2006/112/CE).",
       "export": "Esportazione extra UE, operazione non imponibile ai sensi dell'art. 8 D.P.R. 633/1972. IVA all'importazione e dazi a carico del destinatario."
     }
+  },
+  "admin": {
+    "title": "Account trade",
+    "pending": "{count, plural, =0 {Nessun account in attesa.} one {# account in attesa di approvazione.} other {# account in attesa di approvazione.}}",
+    "accounts": "Account",
+    "company": "Azienda",
+    "vat": "P.IVA",
+    "check": "Verifica IVA",
+    "created": "Richiesta",
+    "status": "Stato",
+    "actions": "Azioni",
+    "approved": "Approvato",
+    "waiting": "In attesa",
+    "approve": "Approva",
+    "revoke": "Revoca",
+    "method": {
+      "vies": "VIES ✓",
+      "hmrc": "HMRC ✓",
+      "format": "Solo formato",
+      "unverified": "Non verificata"
+    },
+    "orders": "Richieste d'ordine trade",
+    "noOrders": "Nessuna richiesta d'ordine.",
+    "save": "Salva"
   }
 }

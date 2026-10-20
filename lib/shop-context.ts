@@ -1,7 +1,10 @@
 import "server-only";
 import { cookies } from "next/headers";
-import { GBP_PER_EUR, type Currency, type CountryCode } from "./config";
-import type { VatRegime } from "./vat-regime";
+import { cache } from "react";
+import { auth } from "@/auth";
+import { db } from "./db";
+import { GBP_PER_EUR, isCountryCode, type Currency, type CountryCode } from "./config";
+import { vatRegimeFor, type VatRegime } from "./vat-regime";
 
 export type TradeInfo = {
   accountId: string;
@@ -27,8 +30,33 @@ export async function getCurrency(): Promise<Currency> {
   return store.get(CURRENCY_COOKIE)?.value === "GBP" ? "GBP" : "EUR";
 }
 
-export async function getTradeInfo(): Promise<TradeInfo | null> {
-  return null;
+/** The signed-in trade account, re-read from the database on every request
+ *  so that revoking approval takes effect immediately. */
+export const getTradeAccount = cache(async () => {
+  const session = await auth();
+  const id = session?.user?.id;
+  if (!id) return null;
+  const account = await db.tradeAccount.findUnique({ where: { id } });
+  return account?.approved ? account : null;
+});
+
+export const getTradeInfo = cache(async (): Promise<TradeInfo | null> => {
+  const account = await getTradeAccount();
+  if (!account || !isCountryCode(account.country)) return null;
+  const { regime, rate } = vatRegimeFor(account.country);
+  return {
+    accountId: account.id,
+    company: account.company,
+    email: account.email,
+    vatNumber: account.vatNumber,
+    country: account.country,
+    regime,
+    vatRate: rate,
+  };
+});
+
+export async function isAdmin() {
+  return (await getTradeAccount())?.role === "admin";
 }
 
 export async function getShopContext(): Promise<ShopContext> {

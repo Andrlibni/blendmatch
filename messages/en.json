@@ -62,6 +62,125 @@
         "reverse_charge": "EU reverse charge 0%",
         "export": "Export 0% VAT"
       }
+    },
+    "page": {
+      "kicker": "For the trade",
+      "title": "Trade",
+      "lead": "Restaurants, wine bars, wine shops and delis across the UK and Northern Europe buy from Lento at trade prices, in mixed cases, with VAT handled for their country.",
+      "termsTitle": "How it works",
+      "terms": {
+        "prices": {
+          "title": "Trade prices",
+          "body": "Once approved, every price on the site switches to trade, excluding VAT, with the retail price shown alongside."
+        },
+        "cases": {
+          "title": "Mixed cases",
+          "body": "Wine is sold in cases of {size}, which you can mix freely across the whole range. Minimum order: {min} bottles of wine. Pantry items go by their own case size."
+        },
+        "discount": {
+          "title": "Volume discount",
+          "body": "{rate}% off all wine from {from} bottles in the same order, applied automatically in the cart."
+        },
+        "vat": {
+          "title": "VAT",
+          "body": "Italy: 22% Italian VAT. EU: intra-Community supply with reverse charge (0%). UK and Norway: export, 0% VAT; import VAT and duties are settled at destination."
+        },
+        "orders": {
+          "title": "Order requests",
+          "body": "No payment online: you send an order request, we confirm availability and send a pro-forma invoice. Payment by bank transfer, 30 days for established accounts."
+        },
+        "delivery": {
+          "title": "Delivery",
+          "body": "We ship from a bonded warehouse in Italy under excise suspension where applicable. Delivery is quoted on the pro-forma; free from 60 bottles."
+        }
+      },
+      "applyKicker": "New account",
+      "applyTitle": "Apply for a trade account",
+      "applyBody": "Tell us about your business. We check your VAT number with the official registers and review every application by hand, usually within one working day.",
+      "steps": {
+        "one": "Submit the form with your VAT number.",
+        "two": "We verify it with VIES (EU) or HMRC (UK) and review your application.",
+        "three": "Once approved, sign in to see trade prices and send order requests."
+      },
+      "already": "Already have an account?",
+      "login": "Sign in",
+      "account": {
+        "kicker": "Your trade account",
+        "country": "Country",
+        "regime": "VAT regime",
+        "shop": "Shop at trade prices",
+        "admin": "Admin",
+        "orders": "Your order requests",
+        "noOrders": "No orders yet."
+      }
+    },
+    "apply": {
+      "business": "Your business",
+      "company": "Company name",
+      "businessType": "Type of business",
+      "choose": "Choose…",
+      "types": {
+        "restaurant": "Restaurant",
+        "wine_bar": "Wine bar",
+        "wine_shop": "Wine shop",
+        "deli": "Deli / food shop",
+        "distributor": "Distributor",
+        "other": "Other"
+      },
+      "country": "Country",
+      "vatNumber": "VAT number",
+      "vatHint": "With or without the country prefix.",
+      "checking": "Checking with the official register…",
+      "vatResult": {
+        "vies": "Confirmed by VIES {name}",
+        "hmrc": "Confirmed by HMRC {name}",
+        "format": "Format and checksum valid",
+        "unverified": "Format valid — the register is not responding, we will check by hand"
+      },
+      "contact": "Contact",
+      "contactName": "Your name",
+      "email": "Business e-mail",
+      "emailHint": "Use your company address, not a personal one.",
+      "phone": "Phone (optional)",
+      "access": "Access",
+      "password": "Password",
+      "passwordHint": "At least 8 characters.",
+      "passwordConfirm": "Repeat password",
+      "terms": "I accept the <link>terms of sale</link> and confirm I am buying for business purposes.",
+      "submit": "Send application",
+      "sending": "Checking and sending…",
+      "successKicker": "Application received",
+      "successTitle": "Thank you.",
+      "successBody": "Your account is waiting for approval. We will write to you as soon as it is active — usually within one working day.",
+      "successUnverified": "The VAT register did not answer during your application, so we will verify your number by hand.",
+      "browse": "Browse the catalogue",
+      "errors": {
+        "required": "Required",
+        "email": "Enter a valid e-mail address",
+        "password": "At least 8 characters",
+        "mismatch": "Passwords do not match",
+        "taken": "An account with this e-mail already exists",
+        "vat_format": "This does not look like a valid VAT number for the selected country",
+        "vat_checksum": "Invalid VAT number: the check digit does not match",
+        "vat_notFound": "This VAT number is not registered as active"
+      }
+    },
+    "login": {
+      "kicker": "Trade",
+      "title": "Trade login",
+      "body": "Sign in with the e-mail and password of your approved trade account to see trade prices and send order requests.",
+      "email": "E-mail",
+      "password": "Password",
+      "submit": "Sign in",
+      "signingIn": "Signing in…",
+      "noAccount": "No account yet?",
+      "noAccountBody": "Restaurants, wine bars and shops can apply for a trade account in a couple of minutes.",
+      "apply": "Apply now",
+      "demoTitle": "Demo accounts (development only)",
+      "errors": {
+        "invalid": "E-mail or password not recognised.",
+        "pending": "Your account is still waiting for approval. We will write to you as soon as it is active."
+      }
     }
   },
   "price": {
@@ -365,5 +484,29 @@
       "reverse_charge": "Intra-Community supply, VAT exempt under Art. 41 D.L. 331/1993 — reverse charge: VAT to be accounted for by the customer (Art. 196 Directive 2006/112/EC).",
       "export": "Export outside the EU, not subject to Italian VAT (Art. 8 D.P.R. 633/1972). Import VAT and duties are due in the country of destination."
     }
+  },
+  "admin": {
+    "title": "Trade accounts",
+    "pending": "{count, plural, =0 {No accounts waiting for approval.} one {# account waiting for approval.} other {# accounts waiting for approval.}}",
+    "accounts": "Accounts",
+    "company": "Company",
+    "vat": "VAT",
+    "check": "VAT check",
+    "created": "Applied",
+    "status": "Status",
+    "actions": "Actions",
+    "approved": "Approved",
+    "waiting": "Waiting",
+    "approve": "Approve",
+    "revoke": "Revoke",
+    "method": {
+      "vies": "VIES ✓",
+      "hmrc": "HMRC ✓",
+      "format": "Format only",
+      "unverified": "Not verified"
+    },
+    "orders": "Trade order requests",
+    "noOrders": "No order requests yet.",
+    "save": "Save"
   }
 }
