@@ -45,5 +45,3 @@ next-env.d.ts
 /prisma/*.db
 /prisma/*.db-journal
 
-# generated
-/data/image-manifest.json

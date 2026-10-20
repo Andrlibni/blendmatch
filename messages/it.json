@@ -62,5 +62,78 @@
         "export": "Esportazione 0% IVA"
       }
     }
+  },
+  "price": {
+    "perBottle": "a bottiglia",
+    "each": "cad.",
+    "exVat": "IVA esclusa",
+    "retailWas": "Prezzo al pubblico"
+  },
+  "product": {
+    "new": "Novità",
+    "presidio": "Presìdio"
+  },
+  "shop": {
+    "title": "Il catalogo",
+    "breadcrumb": "Percorso",
+    "description": "Vini naturali di piccoli vignaioli italiani — agricoltura biologica, fermentazioni spontanee, poca o nessuna solforosa aggiunta — e cibi tutelati dai Presìdi Slow Food.",
+    "results": "{count, plural, =0 {Nessun prodotto} one {# prodotto} other {# prodotti}}",
+    "quick": {
+      "all": "Tutti",
+      "new": "Novità",
+      "orange": "Orange",
+      "white": "Bianchi",
+      "red": "Rossi",
+      "sparkling": "Rifermentati",
+      "pantry": "Dispensa",
+      "presidi": "Presìdi Slow Food",
+      "wine": "Vini"
+    },
+    "types": {
+      "orange": "Orange",
+      "white": "Bianco",
+      "red": "Rosso",
+      "sparkling": "Frizzante",
+      "pantry": "Dispensa"
+    },
+    "regions": {
+      "Sicily": "Sicilia",
+      "Tuscany": "Toscana"
+    },
+    "filters": {
+      "title": "Filtri",
+      "type": "Tipologia",
+      "producer": "Produttore",
+      "region": "Regione",
+      "format": "Formato",
+      "presidio": "Presìdio Slow Food",
+      "presidio_yes": "Sì",
+      "presidio_no": "No",
+      "selected": "selezionato",
+      "active": "Filtri attivi",
+      "remove": "Rimuovi filtro",
+      "clear": "Azzera filtri"
+    },
+    "sort": {
+      "label": "Ordina",
+      "relevance": "Rilevanza",
+      "az": "Nome A–Z",
+      "price-asc": "Prezzo crescente",
+      "price-desc": "Prezzo decrescente"
+    },
+    "search": {
+      "label": "Cerca nel catalogo",
+      "placeholder": "Cerca vino, vitigno, regione…",
+      "submit": "Cerca"
+    },
+    "pagination": {
+      "label": "Paginazione",
+      "prev": "Precedente",
+      "next": "Successiva"
+    },
+    "empty": {
+      "title": "Nessun risultato.",
+      "body": "Prova a rimuovere un filtro o a cercare altro."
+    }
   }
 }
