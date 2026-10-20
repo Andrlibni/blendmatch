@@ -56,6 +56,18 @@ export function MobileMenu() {
               </li>
             ))}
           </ul>
+          <ul className="flex gap-8 px-4 py-6">
+            <li>
+              <Link href="/trade/login" className="eyebrow underline underline-offset-4">
+                {t("tradeLogin")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/cart" className="eyebrow underline underline-offset-4">
+                {t("cart")}
+              </Link>
+            </li>
+          </ul>
         </nav>
       </dialog>
     </>

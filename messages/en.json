@@ -21,7 +21,8 @@
     "stories": "Stories",
     "trade": "Trade",
     "cart": "Cart",
-    "cartCount": "{count, plural, =0 {Cart is empty} one {# item in cart} other {# items in cart}}"
+    "cartCount": "{count, plural, =0 {Cart is empty} one {# item in cart} other {# items in cart}}",
+    "tradeLogin": "Trade login"
   },
   "topbar": {
     "language": "Language",

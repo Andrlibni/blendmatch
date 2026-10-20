@@ -21,7 +21,8 @@
     "stories": "Storie",
     "trade": "Trade",
     "cart": "Carrello",
-    "cartCount": "{count, plural, =0 {Carrello vuoto} one {# articolo nel carrello} other {# articoli nel carrello}}"
+    "cartCount": "{count, plural, =0 {Carrello vuoto} one {# articolo nel carrello} other {# articoli nel carrello}}",
+    "tradeLogin": "Accesso Trade"
   },
   "topbar": {
     "language": "Lingua",
