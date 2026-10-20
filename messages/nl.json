@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "shop": "Winkel",
+    "wine": "Wijn",
+    "pantry": "Delicatessen",
+    "producers": "Producenten",
+    "stories": "Verhalen",
+    "trade": "Zakelijk",
+    "cart": "Winkelmand",
+    "menu": "Menu",
+    "close": "Sluiten"
+  },
+  "topbar": {
+    "language": "Taal",
+    "currency": "Valuta",
+    "tradeLogin": "Zakelijk inloggen"
+  },
+  "age": {
+    "title": "Ben je 18 jaar of ouder?",
+    "yes": "Ik ben 18 of ouder",
+    "no": "Nee"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "shop": "Butik",
+    "wine": "Vin",
+    "pantry": "Skafferi",
+    "producers": "Producenter",
+    "stories": "Berättelser",
+    "trade": "Företag",
+    "cart": "Varukorg",
+    "menu": "Meny",
+    "close": "Stäng"
+  },
+  "topbar": {
+    "language": "Språk",
+    "currency": "Valuta",
+    "tradeLogin": "Företagsinloggning"
+  },
+  "age": {
+    "title": "Har du fyllt 18 år?",
+    "yes": "Jag är 18 eller äldre",
+    "no": "Nej"
+  }
+}

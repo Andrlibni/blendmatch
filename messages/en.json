@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Natural Italian wine & Slow Food Presìdi",
+    "description": "Lento imports natural Italian wines and Slow Food Presìdi to the UK and Northern Europe — for home and for the trade."
+  },
+  "common": {
+    "skip": "Skip to content",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "back": "Back"
+  },
+  "nav": {
+    "main": "Main navigation",
+    "menu": "Menu",
+    "close": "Close",
+    "tagline": "Natural wine & Slow Food from Italy",
+    "shop": "Shop",
+    "wine": "Wine",
+    "pantry": "Pantry",
+    "producers": "Producers",
+    "stories": "Stories",
+    "trade": "Trade",
+    "cart": "Cart",
+    "cartCount": "{count, plural, =0 {Cart is empty} one {# item in cart} other {# items in cart}}"
+  },
+  "topbar": {
+    "language": "Language",
+    "currency": "Currency",
+    "shippingNote": "Free delivery over €120 · UK & Northern Europe",
+    "tradeLogin": "Trade login",
+    "tradeArea": "Trade account"
+  },
+  "footer": {
+    "shop": "Shop",
+    "about": "Lento",
+    "help": "Help",
+    "presidi": "Slow Food Presìdi",
+    "shipping": "Shipping & returns",
+    "terms": "Terms of sale",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "blurb": "Natural wines from small Italian growers and foods protected by Slow Food Presìdi, shipped to the UK and Northern Europe.",
+    "rights": "All rights reserved.",
+    "responsible": "Alcohol is sold only to people aged 18 or over. Please drink responsibly."
+  },
+  "age": {
+    "title": "Are you of legal drinking age?",
+    "body": "This site sells wine. You must be 18 or older — or the legal drinking age in your country — to enter.",
+    "yes": "I am 18 or older",
+    "no": "I am not",
+    "refused": "Sorry — you need to be of legal drinking age to visit Lento. Come back later.",
+    "legal": "By entering you accept our use of a cookie to remember your answer."
+  },
+  "trade": {
+    "band": {
+      "label": "Trade mode",
+      "vat": "VAT",
+      "logout": "Log out",
+      "regime": {
+        "domestic": "Italian VAT 22%",
+        "reverse_charge": "EU reverse charge 0%",
+        "export": "Export 0% VAT"
+      }
+    }
+  }
+}

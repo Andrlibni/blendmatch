@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Vini naturali italiani e Presìdi Slow Food",
+    "description": "Lento importa vini naturali italiani e Presìdi Slow Food nel Regno Unito e nel Nord Europa — per la casa e per i professionisti."
+  },
+  "common": {
+    "skip": "Vai al contenuto",
+    "viewAll": "Vedi tutti",
+    "readMore": "Leggi",
+    "back": "Indietro"
+  },
+  "nav": {
+    "main": "Navigazione principale",
+    "menu": "Menu",
+    "close": "Chiudi",
+    "tagline": "Vino naturale e Slow Food dall'Italia",
+    "shop": "Shop",
+    "wine": "Vini",
+    "pantry": "Dispensa",
+    "producers": "Produttori",
+    "stories": "Storie",
+    "trade": "Trade",
+    "cart": "Carrello",
+    "cartCount": "{count, plural, =0 {Carrello vuoto} one {# articolo nel carrello} other {# articoli nel carrello}}"
+  },
+  "topbar": {
+    "language": "Lingua",
+    "currency": "Valuta",
+    "shippingNote": "Spedizione gratuita sopra 120 € · UK e Nord Europa",
+    "tradeLogin": "Accesso Trade",
+    "tradeArea": "Area Trade"
+  },
+  "footer": {
+    "shop": "Shop",
+    "about": "Lento",
+    "help": "Assistenza",
+    "presidi": "Presìdi Slow Food",
+    "shipping": "Spedizioni e resi",
+    "terms": "Condizioni di vendita",
+    "privacy": "Privacy",
+    "cookies": "Cookie",
+    "blurb": "Vini naturali di piccoli vignaioli italiani e cibi tutelati dai Presìdi Slow Food, spediti nel Regno Unito e nel Nord Europa.",
+    "rights": "Tutti i diritti riservati.",
+    "responsible": "Gli alcolici sono venduti solo a maggiorenni. Bevi responsabilmente."
+  },
+  "age": {
+    "title": "Hai l'età legale per bere alcolici?",
+    "body": "Questo sito vende vino. Per entrare devi avere almeno 18 anni, o l'età legale prevista nel tuo paese.",
+    "yes": "Ho almeno 18 anni",
+    "no": "No",
+    "refused": "Ci dispiace: per visitare Lento devi avere l'età legale per bere alcolici.",
+    "legal": "Entrando accetti l'uso di un cookie per ricordare la tua risposta."
+  },
+  "trade": {
+    "band": {
+      "label": "Modalità Trade",
+      "vat": "P.IVA",
+      "logout": "Esci",
+      "regime": {
+        "domestic": "IVA italiana 22%",
+        "reverse_charge": "Reverse charge UE 0%",
+        "export": "Esportazione 0% IVA"
+      }
+    }
+  }
+}

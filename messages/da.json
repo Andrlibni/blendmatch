@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "shop": "Butik",
+    "wine": "Vin",
+    "pantry": "Spisekammer",
+    "producers": "Producenter",
+    "stories": "Historier",
+    "trade": "Erhverv",
+    "cart": "Kurv",
+    "menu": "Menu",
+    "close": "Luk"
+  },
+  "topbar": {
+    "language": "Sprog",
+    "currency": "Valuta",
+    "tradeLogin": "Erhvervslogin"
+  },
+  "age": {
+    "title": "Er du over 18 år?",
+    "yes": "Jeg er 18 eller ældre",
+    "no": "Nej"
+  }
+}

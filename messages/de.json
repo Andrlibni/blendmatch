@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "shop": "Shop",
+    "wine": "Wein",
+    "pantry": "Feinkost",
+    "producers": "Erzeuger",
+    "stories": "Geschichten",
+    "trade": "Fachhandel",
+    "cart": "Warenkorb",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "topbar": {
+    "language": "Sprache",
+    "currency": "Währung",
+    "tradeLogin": "Händler-Login"
+  },
+  "age": {
+    "title": "Haben Sie das gesetzliche Mindestalter?",
+    "yes": "Ich bin 18 oder älter",
+    "no": "Nein"
+  }
+}
