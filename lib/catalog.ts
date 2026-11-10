@@ -97,7 +97,7 @@ function searchScore(p: Product, q: string) {
       p.area,
       p.category,
       p.presidio ?? "",
-      p.kind === "wine" ? p.grapes.join(" ") : p.ingredients,
+      p.kind === "wine" ? `${p.grapes.join(" ")} ${p.appellation}` : p.ingredients,
       p.short,
     ].join(" "),
   );
@@ -107,6 +107,11 @@ function searchScore(p: Product, q: string) {
     score += name.includes(term) ? 3 : 1;
   }
   return score;
+}
+
+/** Quick categories with no products (e.g. no sparkling wine yet) are hidden. */
+export function categoryHasProducts(category: QuickCategory) {
+  return products.some((p) => matchesCategory(p, category));
 }
 
 type Facet = "types" | "producers" | "regions" | "formats" | "presidio";

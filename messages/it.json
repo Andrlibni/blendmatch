@@ -215,7 +215,10 @@
       "format": "Formato",
       "presidio": "Presìdio Slow Food",
       "ingredients": "Ingredienti",
-      "shelfLife": "Conservazione"
+      "shelfLife": "Conservazione",
+      "appellation": "Denominazione",
+      "currentVintage": "Annata in commercio",
+      "onRequest": "Su richiesta"
     },
     "storyKicker": "La storia",
     "storyTitle": "Da {producer}",
@@ -226,7 +229,7 @@
   "shop": {
     "title": "Il catalogo",
     "breadcrumb": "Percorso",
-    "description": "Vini naturali di piccoli vignaioli italiani — agricoltura biologica, fermentazioni spontanee, poca o nessuna solforosa aggiunta — e cibi tutelati dai Presìdi Slow Food.",
+    "description": "Vini di piccoli vignaioli italiani che lavorano a mano e secondo tradizione — lieviti indigeni, botti vecchie, interventi minimi — e cibi tutelati dai Presìdi Slow Food.",
     "results": "{count, plural, =0 {Nessun prodotto} one {# prodotto} other {# prodotti}}",
     "quick": {
       "all": "Tutti",
@@ -248,7 +251,9 @@
     },
     "regions": {
       "Sicily": "Sicilia",
-      "Tuscany": "Toscana"
+      "Tuscany": "Toscana",
+      "Piedmont": "Piemonte",
+      "Lombardy": "Lombardia"
     },
     "filters": {
       "title": "Filtri",
@@ -319,7 +324,7 @@
       "alt": "Una vigna nel tardo pomeriggio",
       "ctaStories": "Leggi le storie",
       "ctaShop": "Vai al catalogo",
-      "lead": "Lento vuol dire senza fretta. Portiamo i vini naturali di piccoli vignaioli italiani, e i cibi salvati dai Presìdi Slow Food, sulle tavole del Regno Unito e del Nord Europa — insieme alle storie di chi li fa."
+      "lead": "Lento vuol dire senza fretta. Portiamo i vini di vignaioli italiani che si prendono il loro tempo — dal Barolo all'Oltrepò, da Montalcino all'Irpinia — e i cibi salvati dai Presìdi Slow Food, sulle tavole del Regno Unito e del Nord Europa."
     },
     "manifesto": {
       "kicker": "Cosa cerchiamo",
@@ -328,8 +333,8 @@
         "body": "Famiglie che coltivano pochi ettari in biologico, a mano, in luoghi che conoscono pietra per pietra."
       },
       "cellar": {
-        "title": "Niente di aggiunto",
-        "body": "Lieviti indigeni, niente chiarifiche né filtrazioni, solforosa totale sotto i 50 mg/l — spesso molto meno."
+        "title": "Fatti come una volta",
+        "body": "Lieviti indigeni, fermentazioni lunghe, botti vecchie o anfore: vini che sanno del luogo, non della cantina."
       },
       "presidi": {
         "title": "Cibi da salvare",

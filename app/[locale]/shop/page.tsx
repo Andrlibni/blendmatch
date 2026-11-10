@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
   catalogHref,
+  categoryHasProducts,
   parseCatalogQuery,
   quickCategories,
   searchCatalog,
@@ -91,7 +92,7 @@ export default async function ShopPage({ params, searchParams }: PageProps<"/[lo
           <li>
             <QuickLink href="/shop" active={!query.category} label={t("quick.all")} />
           </li>
-          {quickCategories.map((c) => (
+          {quickCategories.filter((c) => c === query.category || categoryHasProducts(c)).map((c) => (
             <li key={c}>
               <QuickLink
                 href={catalogHref(

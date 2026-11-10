@@ -48,7 +48,7 @@ export function ProductImage({
 
 function placeholderDetail(product: Product) {
   const format = `${product.format.amount} ${product.format.unit}`;
-  return product.kind === "wine" ? `${format} · ${product.vintage}` : format;
+  return product.kind === "wine" && product.vintage ? `${format} · ${product.vintage}` : format;
 }
 
 function Placeholder({ producer, name, detail }: { producer: string; name: string; detail: string }) {

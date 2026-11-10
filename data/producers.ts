@@ -2,52 +2,110 @@ import type { Producer } from "./types";
 
 export const producers: Producer[] = [
   {
-    slug: "casa-brezza",
-    name: "Casa Brezza",
-    region: "Friuli Venezia Giulia",
-    area: "Carso, Trieste",
-    founded: 1998,
-    featured: true,
-    hectares: 4.5,
-    farming: "Organic, no irrigation, no added yeasts",
-    tagline: "Vitovska and Ribolla on the Karst plateau, aged in buried amphorae.",
-    story: `On the Karst above Trieste the soil is a thin red skin over limestone, and the bora wind can blow at a hundred kilometres an hour. Marta and Igor Brezza took over a handful of terraces here in 1998, breaking the rock by hand to plant Vitovska and Malvasia where Igor's grandfather had kept a few vines for the family.
-
-The cellar is dug into the stone itself. It stays at twelve degrees all year, and in its floor sit eleven Georgian qvevri, buried up to the neck, where the white grapes ferment on their skins for weeks or months. Nothing is added except a little sulphur at bottling, when the vintage asks for it.
-
-The wines are savoury rather than fruity: salt, dried herbs, tea, a grip that comes from the skins. They age for years, and they taste of the place in a way that is hard to fake — mineral, windswept, a little austere and very alive.`,
-  },
-  {
-    slug: "vigna-lucerta",
-    name: "Vigna Lucerta",
-    region: "Sicily",
-    area: "Vittoria, Ragusa",
-    founded: 2009,
+    slug: "cascina-fontana",
+    name: "Cascina Fontana",
+    region: "Piedmont",
+    area: "Perno, Monforte d'Alba",
+    founded: 1820,
     featured: true,
     hectares: 7,
-    farming: "Organic and biodynamic preparations, bush-trained vines",
-    tagline: "Frappato and Grillo from red sands near the southern coast of Sicily.",
-    story: `Vittoria is the corner of Sicily where the sea is close and the soil is red sand over white limestone. Giulia and Tommaso Ferla grew up here among greenhouses and industrial tomatoes, and in 2009 they bought back three hectares of old alberello vines their family had sold a generation earlier.
+    farming: "Hand-worked vineyards, native yeasts, large old casks",
+    tagline: "Mario Fontana's Barolo \u201ccome una volta\u201d — as it used to be made.",
+    story: `The Fontana family has made wine in Monforte d'Alba since the early nineteenth century. Today the estate is run from the hamlet of Perno by Mario Fontana, the sixth generation, who works a handful of hectares spread across Castiglione Falletto, La Morra, Sinio and Monforte.
 
-They named the estate after the lizards that sun themselves on the dry-stone walls. The vines are worked with a mule on the steepest rows, cover crops grow between them in winter, and harvest starts at dawn to keep the grapes cool. Fermentations start on their own, in concrete and old chestnut barrels.
+Mario describes his wines with three words: come una volta, as it used to be. Fermentations are slow and spontaneous, Nebbiolo stays a long time on its skins, and the wines mature in large old casks rather than new barriques. The Barolo is a blend of several crus, the way most Barolo was made before single-vineyard labels became the rule.
 
-Their Frappato is the opposite of the heavy Sicilian red people expect: pale, perfumed, best slightly chilled. The skin-contact Grillo is a recent experiment that has quickly become a favourite in wine bars from Copenhagen to London.`,
+The result is Barolo of quiet elegance: pale, perfumed, firm but never heavy, and often compared to Burgundy for its transparency. In the 2025 edition of the Vini d'Italia guide, Gambero Rosso named Mario Fontana its Winemaker of the Year.`,
   },
   {
-    slug: "podere-gelso",
-    name: "Podere Gelso",
-    region: "Emilia-Romagna",
-    area: "Sorbara, Modena",
-    founded: 1952,
+    slug: "giuseppe-rinaldi",
+    name: "Giuseppe Rinaldi",
+    region: "Piedmont",
+    area: "Barolo",
     featured: true,
-    hectares: 9,
-    farming: "Organic, hand harvest, refermented in bottle",
-    tagline: "Lambrusco the old way: dry, cloudy and refermented in the bottle.",
-    story: `Between the Secchia and Panaro rivers the soil is silt and sand left by centuries of floods. This is the home of Lambrusco di Sorbara, the palest and most fragrant of the Lambruschi, and of Podere Gelso, a farm the Malagoli family has worked since 1952 — named after the mulberry tree that still shades the farmyard.
+    hectares: 8.5,
+    farming: "Organic, long macerations, large Slavonian oak casks",
+    tagline: "Marta and Carlotta Rinaldi keep one of Barolo's great traditional houses alive.",
+    story: `Few names carry as much weight in Barolo as Rinaldi. For decades the estate in the village of Barolo was run by Giuseppe \u201cBeppe\u201d Rinaldi, a veterinarian turned winemaker known for his sharp wit and his stubborn defence of tradition. Since his death in 2018 the house has been led by his daughters: Marta, who makes the wines, and Carlotta.
 
-Before tanks and pressurised autoclaves, every farmer here made sparkling wine the same way: bottle the wine in spring with a little unfermented must and let it referment in the glass, leaving its sediment, the fondo, at the bottom. Alessandro Malagoli, the third generation, has gone back to exactly that.
+The estate farms about eight and a half hectares organically, including parcels in some of the most famous vineyards of the commune: Brunate, Le Coste, Cannubi San Lorenzo and Ravera. Rather than bottle each separately, the Rinaldis blend them, as the old Barolo houses did, into two wines: Brunate and Tre Tine.
 
-The result is Lambrusco as it is drunk at home in Modena: dry, cloudy if you tip the bottle, low in alcohol, with acidity that cuts through tortellini, mortadella and anything fried. Total sulphur is often below fifteen milligrams per litre.`,
+The cellar is resolutely traditional — long fermentations, big old casks, no new oak — and the Barolos need time. Alongside them the sisters make a small range of Langhe and Alba wines from Nebbiolo, Barbera, Dolcetto, Freisa and Ruchè, made with the same care and rarely seen outside Piedmont.`,
+  },
+  {
+    slug: "lino-maga",
+    name: "Lino Maga",
+    region: "Lombardy",
+    area: "Broni, Oltrepò Pavese",
+    founded: 1958,
+    featured: true,
+    hectares: 8,
+    farming: "Old vines, no chemicals, wines released when they are ready",
+    tagline: "Barbacarlo: the hill, the wine and a name defended for twenty years.",
+    story: `On the hills above Broni, in the Oltrepò Pavese, Lino Maga made one of the most singular red wines in Italy. Barbacarlo is named after the hill it comes from, and for more than twenty years Lino fought consortia, ministries and neighbouring growers in court to keep that name for the wine of that single slope. He won.
+
+Lino started working the family vineyards in 1958 and became a legend of Italian wine, admired by the critic Luigi Veronelli, with whom he campaigned for a more precise system of appellations. He died in 2022, at ninety; his son Giuseppe, who had worked alongside him for years, now runs the estate.
+
+The grapes are the local ones — Croatina, Uva Rara and Ughetta (Vespolina) — and the wines are made without shortcuts. Barbacarlo grows on one hill, Montebuono on the one next to it, on different soils. Both change markedly from vintage to vintage, and both age far longer than their reputation would suggest.`,
+  },
+  {
+    slug: "vallisassoli",
+    name: "Vallisassoli",
+    region: "Campania",
+    area: "San Martino Valle Caudina, Avellino",
+    founded: 2011,
+    featured: true,
+    hectares: 2,
+    farming: "Biodynamic, Demeter certified since 2017",
+    tagline: "One hectare of old pergola vines under Monte Partenio, and one wine.",
+    story: `Vallisassoli is the project of Paolo Clemente in San Martino Valle Caudina, a small town in the province of Avellino, on the border with Benevento. The name comes from the hill where the vineyard stands, which was once a Saxon camp.
+
+It began in 2011 as a way to carry on the wine the family had always made at home. The heart of it is a single hectare of old pergola vines, planted by Paolo's father at the foot of Monte Partenio, with Greco, Fiano and Coda di Volpe growing side by side. A second hectare of Aglianico was planted on Monte Taburno in 2019.
+
+Paolo farms biodynamically — the estate has been Demeter certified since 2017 — and works in the cellar with spontaneous fermentations and as little intervention as possible. The main wine, 33/33/33, takes its name from the three grapes in equal parts.`,
+  },
+  {
+    slug: "podere-le-ripi",
+    name: "Podere Le Ripi",
+    region: "Tuscany",
+    area: "Montalcino",
+    featured: true,
+    farming: "High-density bush vines, large casks",
+    tagline: "Francesco Illy's Montalcino: Brunello from dense, low vines and wild woodland.",
+    story: `Podere Le Ripi sits in the south-east of Montalcino, among woods and olive groves. Its owner, Francesco Illy — of the Trieste coffee family — first came to Montalcino as a nature photographer and fell in love with the place long before he made wine there.
+
+The estate is known for its unusual vineyards. Some are planted at very high densities, with low, bush-trained vines that compete with each other and give small, concentrated bunches. The most extreme, Bonsai, has tens of thousands of vines per hectare and gives a wine that sits outside the Brunello rules.
+
+The Brunellos — Cielo d'Ulisse, Amore e Magia and Lupi e Sirene — come from different vineyards around the estate, each with its own soil and exposure. The Rosso di Montalcino, Sogni e Follia, spends far longer in the cellar than most and drinks almost like a young Brunello.`,
+  },
+  {
+    slug: "marco-tinessa",
+    name: "Marco Tinessa",
+    region: "Campania",
+    area: "Irpinia and Taburno",
+    featured: true,
+    farming: "Native yeasts, amphora and concrete, minimal sulphur",
+    tagline: "A former banker making Aglianico and Fiano in amphora.",
+    story: `Marco Tinessa did not inherit vineyards or a cellar. He worked in finance in Milan before deciding to make wine in Campania, starting from scratch with old vineyards in Irpinia and on the slopes of Monte Taburno.
+
+His flagship is Ognostro — Neapolitan dialect for \u201cink\u201d, after the almost black colour of Aglianico. The grapes ferment with their own yeasts and mature in ceramic and stoneware amphorae and concrete, with very little sulphur added, so that the wine shows the fruit and the volcanic soils rather than the cellar.
+
+Alongside the red there is an Ognostro Fiano from Lapio, in the Fiano di Avellino area, and the Rubice wines: an Aglianico from young vines on the Taburno and a white, both made to be drunk sooner.`,
+  },
+  {
+    slug: "le-boncie",
+    name: "Le Boncie",
+    region: "Tuscany",
+    area: "San Felice, Castelnuovo Berardenga",
+    featured: true,
+    hectares: 3,
+    farming: "Sangiovese with old Tuscan varieties, native yeasts, long ageing",
+    tagline: "Giovanna Morganti's Sangiovese, made her own way outside the appellation.",
+    story: `Podere Le Boncie is a small farm at San Felice, near Castelnuovo Berardenga, on the southern edge of Chianti Classico. Giovanna Morganti grew up among vines: her father, Enzo Morganti, was one of the oenologists who shaped modern Chianti.
+
+Her few hectares grow Sangiovese together with the old varieties that used to share Tuscan vineyards with it — Colorino, Mammolo, Foglia Tonda, Ciliegiolo. In the cellar she uses long fermentations and ageing in old wood, and she takes her time.
+
+Her main wine, Le Trame, was for years one of the most admired Chianti Classicos. Giovanna eventually chose to leave the appellation and bottle it as Toscana IGT, so she could make it exactly as she wanted. Cinque, from five varieties, is the wine for every day; Chiesamonti comes from the older vines of the same parcel.`,
   },
   {
     slug: "antica-colatura-cetarese",

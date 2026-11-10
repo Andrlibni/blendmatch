@@ -3,13 +3,15 @@ import { formatNumber } from "@/lib/format";
 import { formatLabel } from "@/lib/catalog";
 import type { Product } from "@/data/types";
 
-/** "75 cl / 12,5°" for wine, "100 ml / Presìdio" for pantry. */
+/** "75 cl / 12,5°" (or the appellation) for wine, "100 ml / Presìdio" for pantry. */
 export function SpecLine({ product }: { product: Product }) {
   const locale = useLocale();
   const format = formatLabel(product);
   const second =
     product.kind === "wine"
-      ? `${formatNumber(product.abv, locale)}°`
+      ? product.abv
+        ? `${formatNumber(product.abv, locale)}°`
+        : product.appellation
       : product.presidio
         ? "Presìdio Slow Food"
         : product.region;

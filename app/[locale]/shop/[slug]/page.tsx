@@ -64,13 +64,20 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/shop/
   const specs: { label: string; value: string }[] =
     product.kind === "wine"
       ? [
+          { label: t("specs.appellation"), value: product.appellation },
           { label: t("specs.grapes"), value: product.grapes.join(", ") },
           { label: t("specs.region"), value: `${region} · ${product.area}` },
-          { label: t("specs.vintage"), value: String(product.vintage) },
-          { label: t("specs.soil"), value: product.soil },
+          { label: t("specs.vintage"), value: product.vintage ? String(product.vintage) : t("specs.currentVintage") },
+          ...(product.soil ? [{ label: t("specs.soil"), value: product.soil }] : []),
           { label: t("specs.vinification"), value: product.vinification },
-          { label: t("specs.so2"), value: `${product.so2Total} mg/l` },
-          { label: t("specs.abv"), value: `${formatNumber(product.abv, locale)}% vol` },
+          {
+            label: t("specs.so2"),
+            value: product.so2Total ? `${product.so2Total} mg/l` : t("specs.onRequest"),
+          },
+          {
+            label: t("specs.abv"),
+            value: product.abv ? `${formatNumber(product.abv, locale)}% vol` : t("specs.onRequest"),
+          },
           { label: t("specs.format"), value: formatLabel(product) },
         ]
       : [
@@ -96,9 +103,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/shop/
     ...(product.kind === "wine"
       ? {
           additionalProperty: [
-            { "@type": "PropertyValue", name: "Alcohol", value: `${product.abv}%` },
+            ...(product.abv
+              ? [{ "@type": "PropertyValue", name: "Alcohol", value: `${product.abv}%` }]
+              : []),
             { "@type": "PropertyValue", name: "Grapes", value: product.grapes.join(", ") },
-            { "@type": "PropertyValue", name: "Vintage", value: product.vintage },
+            { "@type": "PropertyValue", name: "Appellation", value: product.appellation },
+            ...(product.vintage
+              ? [{ "@type": "PropertyValue", name: "Vintage", value: product.vintage }]
+              : []),
           ],
         }
       : {}),

@@ -215,7 +215,10 @@
       "format": "Format",
       "presidio": "Slow Food Presìdio",
       "ingredients": "Ingredients",
-      "shelfLife": "Shelf life"
+      "shelfLife": "Shelf life",
+      "appellation": "Appellation",
+      "currentVintage": "Current vintage",
+      "onRequest": "On request"
     },
     "storyKicker": "The story",
     "storyTitle": "From {producer}",
@@ -226,7 +229,7 @@
   "shop": {
     "title": "The catalogue",
     "breadcrumb": "Breadcrumb",
-    "description": "Natural wines from small Italian growers — farmed organically, fermented with native yeasts, bottled with little or no sulphur — and foods protected by Slow Food Presìdi.",
+    "description": "Wines from small Italian growers who work by hand and by tradition — native yeasts, old casks, little intervention — and foods protected by Slow Food Presìdi.",
     "results": "{count, plural, =0 {No products} one {# product} other {# products}}",
     "quick": {
       "all": "All",
@@ -316,7 +319,7 @@
       "alt": "A vineyard in the late afternoon",
       "ctaStories": "Read our stories",
       "ctaShop": "Shop the catalogue",
-      "lead": "Lento means slow. We bring natural wines from small Italian growers, and foods kept alive by Slow Food Presìdi, to tables in the UK and Northern Europe — with the stories of the people who make them."
+      "lead": "Lento means slow. We bring wines from Italian growers who take their time — from Barolo to the Oltrepò, from Montalcino to Irpinia — and foods kept alive by Slow Food Presìdi, to tables in the UK and Northern Europe."
     },
     "manifesto": {
       "kicker": "What we look for",
@@ -325,8 +328,8 @@
         "body": "Families farming a few hectares organically, by hand, in places they know stone by stone."
       },
       "cellar": {
-        "title": "Nothing added",
-        "body": "Native yeasts, no fining or filtering, and total sulphur below 50 mg/l — often far below."
+        "title": "Made as it used to be",
+        "body": "Native yeasts, long fermentations, old casks or amphorae: wines that taste of a place, not of the cellar."
       },
       "presidi": {
         "title": "Foods worth saving",

@@ -2,69 +2,88 @@ import type { Story } from "./types";
 
 export const stories: Story[] = [
   {
-    slug: "the-karst-in-amphora",
-    kicker: "Carso, Friuli Venezia Giulia",
-    title: "The Karst, in amphora",
+    slug: "barbacarlo-a-name-won-in-court",
+    kicker: "Broni, Oltrepò Pavese",
+    title: "Barbacarlo, a name won in court",
     excerpt:
-      "On a limestone plateau swept by the bora, Casa Brezza ferments white grapes on their skins in clay jars buried in the rock.",
-    producer: "casa-brezza",
-    products: ["ribolla-gialla-anfora", "vitovska-kamen", "malvasia-istriana"],
+      "For twenty years Lino Maga fought to keep the name of a hill for the wine that grows on it. Then he went back to his vines.",
+    producer: "lino-maga",
+    products: ["lino-maga-barbacarlo", "lino-maga-montebuono"],
     readingMinutes: 4,
-    body: `There is almost no soil on the Karst. What there is lies in red pockets between slabs of white limestone, and every vineyard here was made by hand, breaking the rock and carrying earth up from the dolines. When Marta and Igor Brezza started in 1998, they planted the same grapes Igor's grandfather had kept: Vitovska, Malvasia, a little Terrano.
+    body: `Barbacarlo is a hill above Broni, in the Oltrepò Pavese, the corner of Lombardy that pushes south into the Apennines. It is also a wine, and for a long time that was a problem.
 
-## A cellar in the stone
+## One hill, one wine
 
-The cellar is a cave cut into the plateau. Its floor holds eleven qvevri, the egg-shaped clay jars of Georgia, buried to the neck so that the rock keeps them at a steady twelve degrees. After harvest the white grapes go in whole, skins and all, and are left alone. Fermentation starts by itself. The jars are sealed, and opened again in spring.
+Lino Maga began working his family's vines in 1958. The wine he made on Barbacarlo — from Croatina, Uva Rara and Ughetta, the local name for Vespolina — became famous, and others began to use the name. Lino took them to court. The fight against consortia, ministries and neighbouring growers lasted more than twenty years, and he won the exclusive right to call his wine Barbacarlo.
 
-What comes out is not what most people expect from a white wine. The colour is amber, the smell is of dried fruit, herbs and tea, and there is a grip on the palate — tannin from the skins — that makes these wines feel closer to reds at the table.
+It was not stubbornness for its own sake. Lino believed, with his friend the critic Luigi Veronelli, that a wine should carry the name of the exact place it comes from. Together they campaigned for a more precise system of appellations, one that would protect single hills and slopes rather than whole provinces.
 
-## Why skin contact
+## Two hills, two soils
 
-Skin contact is not a fashion on this border; it is how white wine was made here for centuries, on both sides of what is now the Italian–Slovenian frontier. The skins protect the wine, which is why the Brezzas can bottle with very little sulphur. And they carry the taste of the place: the salt of the sea ten kilometres away, the bitterness of the wild herbs that grow between the rows.
+Next to Barbacarlo is Montebuono. The grapes are the same, the work is the same, the soil is not, and the wines taste different. Tasting them side by side is one of the clearest lessons in Italian wine about what terroir means.
 
-Open these bottles a little before dinner, serve them at cellar temperature rather than fridge-cold, and give them food with some substance.`,
+Lino Maga died in 2022, at ninety. His son Giuseppe, who had worked beside him for years, carries on. The wines still change from vintage to vintage — sometimes generous, sometimes austere — and they still age far longer than anyone expects.`,
   },
   {
-    slug: "vittoria-lightly",
-    kicker: "Vittoria, Sicily",
-    title: "Vittoria, lightly",
+    slug: "barolo-come-una-volta",
+    kicker: "Perno, Monforte d'Alba",
+    title: "Barolo, come una volta",
     excerpt:
-      "Sicilian red does not have to be heavy. In the red sands near Ragusa, Vigna Lucerta makes Frappato you can chill.",
-    producer: "vigna-lucerta",
-    products: ["frappato-lucerta", "grillo-scirocco", "terra-rossa-nero-frappato"],
+      "No single vineyards, no new oak, no hurry. Mario Fontana makes Barolo the way his family made it two centuries ago.",
+    producer: "cascina-fontana",
+    products: ["cascina-fontana-barolo", "cascina-fontana-langhe-nebbiolo", "cascina-fontana-dolcetto-d-alba"],
     readingMinutes: 3,
-    body: `Drive south from Ragusa towards the sea and the land flattens into red sand, broken by white limestone and by the long plastic roofs of the greenhouses that made this coast rich in the 1980s. Between them, a few old vineyards survived. Giulia and Tommaso Ferla bought back three hectares of them in 2009.
+    body: `In Perno, a hamlet of Monforte d'Alba, the Fontana family has been making wine since the early 1800s. Mario Fontana, the sixth generation, sums up his approach in three words: come una volta — as it used to be.
 
-## The grape nobody bottled alone
+## The blend
 
-Frappato was, for most of the last century, a supporting actor: a pale, perfumed grape used to soften the dark Nero d'Avola in the local blend. The Ferlas thought it deserved better. Their Frappato comes from forty-year-old bush vines on the sandiest plot, fermented in whole bunches and kept in concrete so that nothing covers its smell of wild strawberries and roses.
+For most of its history, Barolo was a blend. Families owned small plots scattered across different villages, and the art was in putting them together. Mario still works this way: his classic Barolo brings together crus in Castiglione Falletto and La Morra, and only in the best years does he bottle Castiglione Falletto on its own.
 
-Serve it slightly cool, around fourteen degrees, with tuna, caponata or pizza. It is a red for the Mediterranean summer, and for northern restaurants that want a red wine their guests can drink with fish.
+## The cellar
 
-## A wind called Scirocco
+Fermentations start by themselves. The Nebbiolo stays a long time on its skins and then rests for years in large, old oak casks that give air and time but no taste of wood. The wines that come out are pale, perfumed and quietly powerful — closer, many say, to great Burgundy than to the dark, oaky Barolos of the 1990s.
 
-In 2019 a hot African wind blew through the harvest. The Ferlas put some Grillo into a single amphora with its skins, to see what would happen. The wine that came out — citrus peel, honey, wild fennel and a gentle tannin — is now the one wine bars ask for first.`,
+In 2025 the Gambero Rosso guide named Mario Fontana Winemaker of the Year. Nothing changed in Perno: the same small cellar, the same casks, the same patience.`,
   },
   {
-    slug: "bubbles-from-the-bottom",
-    kicker: "Sorbara, Emilia-Romagna",
-    title: "Bubbles from the bottom",
+    slug: "leaving-the-appellation",
+    kicker: "Castelnuovo Berardenga, Tuscany",
+    title: "Leaving the appellation",
     excerpt:
-      "Long before autoclaves, every Lambrusco was refermented in the bottle. Podere Gelso still makes it that way, sediment and all.",
-    producer: "podere-gelso",
-    products: ["sorbara-col-fondo", "nebbia-trebbiano-frizzante", "sorbara-col-fondo-magnum"],
+      "Giovanna Morganti made one of the most admired Chianti Classicos. Then she took the name off the label.",
+    producer: "le-boncie",
+    products: ["le-boncie-le-trame", "le-boncie-cinque", "le-boncie-chiesamonti"],
     readingMinutes: 3,
-    body: `In the farmhouses of the Po valley, sparkling wine was never a luxury. It was what you made every spring: bottle the new wine with a little sweet must kept back from harvest, and the yeast left in it would wake up in the warmth, turn the sugar into bubbles, and settle at the bottom of the bottle as a fine sediment. The fondo.
+    body: `At San Felice, on the southern edge of Chianti Classico, Giovanna Morganti farms a few hectares of vines. She grew up in this landscape: her father, Enzo Morganti, was one of the oenologists who shaped modern Chianti.
 
-## Going back
+## Sangiovese and its companions
 
-From the 1960s, Lambrusco moved into pressurised tanks and became the sweet, cheap, fizzy red that conquered export markets. At Podere Gelso, Alessandro Malagoli, the third generation on the farm, decided to go back to his grandfather's method — no tank, no added sugar, no disgorging.
+Before Sangiovese ruled alone, Tuscan vineyards were mixed: Colorino for colour, Mammolo for perfume, Foglia Tonda, Ciliegiolo. At Le Boncie they grow alongside the Sangiovese again. Her Cinque — five — is named after them.
 
-His Lambrusco di Sorbara is coral pink, bone dry, low in alcohol and sharply acidic. You can pour it clear, or tip the bottle and drink it cloudy, as they do at home in Modena. Total sulphur is often under fifteen milligrams per litre.
+## Outside the rules
 
-## At the table
+Her Le Trame was for years one of the most praised wines labelled Chianti Classico. Giovanna eventually chose to leave the appellation and bottle it as Toscana IGT, free to make it exactly as she wanted. The wine did not change its character; only the label did.
 
-The acidity is the point. It cuts through the fat of mortadella and tortellini in brodo, of fried dough and cured pork. It is a wine for lunch, for large tables, for not taking things too seriously — which is why we also bring it in magnum.`,
+It is a small, quiet decision that says a lot about the producers we work with: the place and the wine come first, the rules second.`,
+  },
+  {
+    slug: "three-grapes-one-pergola",
+    kicker: "San Martino Valle Caudina, Campania",
+    title: "Three grapes, one pergola",
+    excerpt:
+      "Greco, Fiano and Coda di Volpe grow side by side under Monte Partenio. Paolo Clemente picks them together and lets them become one wine.",
+    producer: "vallisassoli",
+    products: ["vallisassoli-33-33-33", "vallisassoli-michelangelo-magnum"],
+    readingMinutes: 3,
+    body: `In the old vineyards of inland Campania, nobody planted one grape per row. Greco, Fiano and Coda di Volpe grew mixed together on high pergolas, and the family wine was made from all of them at once.
+
+## A father's vineyard
+
+Paolo Clemente's vineyard in San Martino Valle Caudina is exactly that: a hectare of pergola planted by his father at the foot of Monte Partenio, on a hill that was once a Saxon camp — hence the name, Vallisassoli. In 2011 Paolo decided to turn the family's home winemaking into a real project.
+
+## Equal parts
+
+His main wine is called 33/33/33, after the three grapes in equal shares. The vineyard is farmed biodynamically and has been Demeter certified since 2017; in the cellar the juice ferments on its own, with time on the skins, and is bottled without filtration. A little of each harvest goes into Michelangelo, a magnum aged in wood for the long haul.`,
   },
   {
     slug: "why-we-import-presidi",

@@ -55,7 +55,7 @@ export default async function ProducerPage({ params }: PageProps<"/[locale]/prod
           <dl className="border-t hairline">
             {[
               [t("region"), `${producer.region} · ${producer.area}`],
-              [t("founded"), String(producer.founded)],
+              ...(producer.founded ? [[t("founded"), String(producer.founded)]] : []),
               ...(producer.hectares ? [[t("hectares"), `${producer.hectares} ha`]] : []),
               [t("farming"), producer.farming],
             ].map(([label, value]) => (

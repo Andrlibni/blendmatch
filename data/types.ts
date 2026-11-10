@@ -40,13 +40,16 @@ export type WineProduct = BaseProduct & {
   kind: "wine";
   category: WineCategory;
   grapes: string[];
-  vintage: number;
+  /** Denomination as on the label, e.g. "Barolo DOCG". */
+  appellation: string;
+  /** Current vintage, when known. */
+  vintage?: number;
   vinification: string;
-  soil: string;
-  /** Total SO₂ in mg/l. */
-  so2Total: number;
-  /** Alcohol by volume, %. */
-  abv: number;
+  soil?: string;
+  /** Total SO₂ in mg/l; omitted when the producer has not shared it. */
+  so2Total?: number;
+  /** Alcohol by volume, %; omitted when it varies by vintage and is not confirmed. */
+  abv?: number;
 };
 
 export type PantryProduct = BaseProduct & {
@@ -63,7 +66,7 @@ export type Producer = {
   name: string;
   region: string;
   area: string;
-  founded: number;
+  founded?: number;
   /** Featured producers get a full page with story and portrait. */
   featured: boolean;
   /** One line for lists. */

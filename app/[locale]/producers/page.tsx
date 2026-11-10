@@ -44,7 +44,7 @@ export default async function ProducersPage({ params }: PageProps<"/[locale]/pro
                 <dl className="eyebrow mt-8 grid grid-cols-3 gap-4 border-t hairline pt-5 text-muted">
                   <div>
                     <dt>{t("founded")}</dt>
-                    <dd className="mt-1 text-ink">{p.founded}</dd>
+                    <dd className="mt-1 text-ink">{p.founded ?? "—"}</dd>
                   </div>
                   <div>
                     <dt>{t("hectares")}</dt>
