@@ -11,7 +11,7 @@ const DOLCETTO = "cascina-fontana-dolcetto-d-alba";
 const NEBBIOLO = "cascina-fontana-langhe-nebbiolo";
 const BARBERA = "rinaldi-barbera-d-alba";
 const COLATURA = "colatura-di-alici-di-cetara";
-const PIENNOLO = "pomodorino-del-piennolo-del-vesuvio";
+const PIENNOLO = "antichi-pomodori-di-napoli-pelati";
 
 test("retail: free shipping from €120, flat fee below", () => {
   const small = computeCart([line(DOLCETTO, 2)], { kind: "retail" });

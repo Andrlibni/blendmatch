@@ -90,10 +90,11 @@ His main wine is called 33/33/33, after the three grapes in equal shares. The vi
     kicker: "Slow Food Presìdi",
     title: "Why we import Presìdi",
     excerpt:
-      "A drop of colatura, a jar of Piennolo tomatoes: small foods kept alive by the people who still make them, and by those who buy them.",
+      "A drop of colatura, a handful of Cicerale chickpeas: small foods kept alive by the people who still make them, and by those who buy them.",
     products: [
       "colatura-di-alici-di-cetara",
-      "pomodorino-del-piennolo-del-vesuvio",
+      "alici-di-menaica",
+      "cece-di-cicerale",
       "cicerchia-di-serra-de-conti",
       "fagiolo-zolfino",
     ],
