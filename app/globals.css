@@ -12,9 +12,11 @@
   --color-terracotta: #8f4a2e;
   --color-olive: #4f5a39;
   /* Light washes of the three accent colours, for tinted panels on ivory */
-  --color-wine-wash: #f1e6e1;
+  --color-wine-wash: #f0dcd7;
   --color-terracotta-wash: #f2e8dd;
-  --color-olive-wash: #e9eadf;
+  --color-olive-wash: #e1e6d6;
+  /* Off-white, a touch lighter than the ivory page background */
+  --color-paper: #fefcf8;
   --color-alert: #8a1c12;
   --color-ok: #2f5132;
 

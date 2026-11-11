@@ -75,13 +75,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <p className="mx-auto mt-8 max-w-4xl text-center font-serif text-3xl leading-[1.25] text-wine sm:text-[2.6rem]">
           {t("hero.lead")}
         </p>
-        {/* Three principles: light washes of the accent colours, content aligned from the top */}
-        <ul className="mx-auto mt-20 grid max-w-6xl gap-4 sm:mt-24 md:grid-cols-3 md:gap-5">
+        {/* Three principles: green, white and red washes side by side, a quiet nod to the Italian flag */}
+        <ul className="mx-auto mt-20 grid max-w-6xl sm:mt-24 md:grid-cols-3">
           {(
             [
-              { key: "growers", bg: "bg-wine-wash", accent: "text-wine", rule: "bg-wine/40" },
-              { key: "cellar", bg: "bg-ivory-deep", accent: "text-terracotta", rule: "bg-terracotta/40" },
-              { key: "treasures", bg: "bg-olive-wash", accent: "text-olive", rule: "bg-olive/40" },
+              { key: "growers", bg: "bg-olive-wash", accent: "text-olive", rule: "bg-olive/40" },
+              { key: "cellar", bg: "bg-paper border-y hairline", accent: "text-ink", rule: "bg-ink/30" },
+              { key: "treasures", bg: "bg-wine-wash", accent: "text-wine", rule: "bg-wine/40" },
             ] as const
           ).map(({ key, bg, accent, rule }, i) => (
             <li key={key} className={`${bg} relative overflow-hidden px-8 pb-10 pt-9 sm:px-10 sm:pb-12`}>
