@@ -158,10 +158,10 @@ export const photoCredits: Record<string, PhotoCredit> = {
   "conciato-romano": {
     "kind": "licensed",
     "source": "Wikimedia Commons",
-    "author": "Jan-Tore Egge",
+    "author": "Superbass",
     "license": "CC BY-SA 4.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Pecorino_Metello.jpg",
-    "title": "Pecorino Metello.jpg"
+    "url": "https://commons.wikimedia.org/wiki/File:2022-05-11-Pecorino_mit_Pfeffer-.jpg",
+    "title": "2022-05-11-Pecorino mit Pfeffer-.jpg"
   },
   "fagiolo-dente-di-morto": {
     "kind": "licensed",
@@ -174,10 +174,10 @@ export const photoCredits: Record<string, PhotoCredit> = {
   "antichi-pomodori-di-napoli-pelati": {
     "kind": "licensed",
     "source": "Wikimedia Commons",
-    "author": "Anna.Massini",
-    "license": "CC BY-SA 4.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Pomodori_San_Marzano_in_maturazione_-_biologici.jpg",
-    "title": "Pomodori San Marzano in maturazione - biologici.jpg"
+    "author": "Goldlocki",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:TomateSanMarzano.jpg",
+    "title": "TomateSanMarzano.jpg"
   },
   "miele-dei-prati-del-matese": {
     "kind": "licensed",
@@ -242,10 +242,10 @@ export const editorialCredits: Record<string, Extract<PhotoCredit, { kind: "lice
   "producers/vallisassoli": {
     "kind": "licensed",
     "source": "Wikimedia Commons",
-    "author": "Decan",
-    "license": "CC BY-SA 4.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Cervinara_-_Partenio_visto_da_Via_Taiano.jpg",
-    "title": "Cervinara - Partenio visto da Via Taiano.jpg"
+    "author": "VallVit",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Paupisi,_vigneti_accanto_al_Calore.jpg",
+    "title": "Paupisi, vigneti accanto al Calore.jpg"
   },
   "producers/podere-le-ripi": {
     "kind": "licensed",
@@ -294,5 +294,21 @@ export const editorialCredits: Record<string, Extract<PhotoCredit, { kind: "lice
     "license": "CC BY 4.0",
     "url": "https://commons.wikimedia.org/wiki/File:Campagna_nei_pressi_di_Castelnuovo_Berardenga.jpg",
     "title": "Campagna nei pressi di Castelnuovo Berardenga.jpg"
+  },
+  "stories/three-grapes-one-pergola": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "VallVit",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Monte_Drago,_vallone_Secco_e_vigneti.jpg",
+    "title": "Monte Drago, vallone Secco e vigneti.jpg"
+  },
+  "stories/italian-food-treasures": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Bernard Gagnon",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Cetara_(Italy).jpg",
+    "title": "Cetara (Italy).jpg"
   }
 };
