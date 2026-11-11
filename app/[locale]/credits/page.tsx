@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { photoCredits } from "@/data/photo-credits";
+import { editorialCredits, photoCredits } from "@/data/photo-credits";
+import { getProducer } from "@/data/producers";
+import { getStory } from "@/data/stories";
 import { getProduct } from "@/data/products";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/credits">): Promise<Metadata> {
@@ -45,6 +47,35 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
                 </li>
               ) : null,
             )}
+          </ul>
+        </section>
+      )}
+
+      {Object.keys(editorialCredits).length > 0 && (
+        <section className="mt-12" aria-labelledby="landscapes">
+          <h2 id="landscapes" className="eyebrow border-b hairline pb-3">{t("landscapes")}</h2>
+          <p className="mt-4 text-sm leading-relaxed text-muted">{t("landscapesNote")}</p>
+          <ul className="mt-2">
+            {Object.entries(editorialCredits).map(([key, c]) => {
+              const [folder, slug] = key.split("/");
+              const label =
+                folder === "home"
+                  ? t("home")
+                  : folder === "producers"
+                    ? getProducer(slug)?.name
+                    : getStory(slug)?.title;
+              return (
+                <li key={key} className="border-b hairline py-4 text-sm leading-relaxed">
+                  <p className="font-serif text-lg text-wine">{label}</p>
+                  <p className="mt-1">
+                    “{c.title}” — {c.author} · {c.license} ·{" "}
+                    <a href={c.url} className="underline underline-offset-4" rel="noopener noreferrer" target="_blank">
+                      {c.source}
+                    </a>
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}

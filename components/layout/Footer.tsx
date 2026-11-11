@@ -13,7 +13,7 @@ export async function Footer() {
         { href: "/shop", label: n("shop") },
         { href: "/shop?category=wine", label: n("wine") },
         { href: "/shop?category=pantry", label: n("pantry") },
-        { href: "/shop?category=presidi", label: t("presidi") },
+        { href: "/shop?category=treasures", label: t("treasures") },
       ],
     },
     {

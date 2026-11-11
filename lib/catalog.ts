@@ -12,7 +12,7 @@ export const quickCategories = [
   "red",
   "sparkling",
   "pantry",
-  "presidi",
+  "treasures",
 ] as const;
 export type QuickCategory = (typeof quickCategories)[number] | "wine";
 
@@ -27,7 +27,7 @@ export type CatalogQuery = {
   producers: string[];
   regions: string[];
   formats: string[];
-  presidio?: "yes" | "no";
+  treasure?: "yes" | "no";
   q: string;
   sort: SortOption;
   page: number;
@@ -41,7 +41,7 @@ const list = (v: string | string[] | undefined) =>
 export function parseCatalogQuery(params: RawParams): CatalogQuery {
   const category = list(params.category)[0] as QuickCategory | undefined;
   const sort = list(params.sort)[0] as SortOption | undefined;
-  const presidio = list(params.presidio)[0];
+  const treasure = list(params.treasure)[0];
   const page = Number.parseInt(list(params.page)[0] ?? "1", 10);
   return {
     category:
@@ -52,7 +52,7 @@ export function parseCatalogQuery(params: RawParams): CatalogQuery {
     producers: list(params.producer),
     regions: list(params.region),
     formats: list(params.format),
-    presidio: presidio === "yes" || presidio === "no" ? presidio : undefined,
+    treasure: treasure === "yes" || treasure === "no" ? treasure : undefined,
     q: (list(params.q)[0] ?? "").trim().slice(0, 80),
     sort: sort && sortOptions.includes(sort) ? sort : "relevance",
     page: Number.isFinite(page) && page > 0 ? page : 1,
@@ -69,8 +69,8 @@ function matchesCategory(p: Product, category?: QuickCategory) {
       return true;
     case "new":
       return !!p.isNew;
-    case "presidi":
-      return !!p.presidio;
+    case "treasures":
+      return !!p.treasure;
     case "wine":
       return p.kind === "wine";
     default:
@@ -97,7 +97,7 @@ function searchScore(p: Product, q: string) {
       p.region,
       p.area,
       p.category,
-      p.presidio ?? "",
+      p.treasure ?? "",
       p.kind === "wine" ? `${p.grapes.join(" ")} ${p.appellation}` : p.ingredients,
       p.short,
     ].join(" "),
@@ -115,7 +115,7 @@ export function categoryHasProducts(category: QuickCategory) {
   return products.some((p) => matchesCategory(p, category));
 }
 
-type Facet = "types" | "producers" | "regions" | "formats" | "presidio";
+type Facet = "types" | "producers" | "regions" | "formats" | "treasure";
 
 function passes(p: Product, query: CatalogQuery, skip?: Facet) {
   if (!matchesCategory(p, query.category)) return false;
@@ -126,9 +126,9 @@ function passes(p: Product, query: CatalogQuery, skip?: Facet) {
     return false;
   if (skip !== "formats" && query.formats.length && !query.formats.includes(formatLabel(p)))
     return false;
-  if (skip !== "presidio" && query.presidio) {
-    if (query.presidio === "yes" && !p.presidio) return false;
-    if (query.presidio === "no" && p.presidio) return false;
+  if (skip !== "treasure" && query.treasure) {
+    if (query.treasure === "yes" && !p.treasure) return false;
+    if (query.treasure === "no" && p.treasure) return false;
   }
   return searchScore(p, query.q) > 0;
 }
@@ -184,7 +184,7 @@ export function getFacets(query: CatalogQuery) {
       formatLabel,
       formats.map((f) => ({ value: f, label: f })),
     ),
-    presidio: countBy(query, "presidio", (p) => (p.presidio ? "yes" : "no"), [
+    treasure: countBy(query, "treasure", (p) => (p.treasure ? "yes" : "no"), [
       { value: "yes", label: "yes" },
       { value: "no", label: "no" },
     ]),
@@ -235,7 +235,7 @@ export function catalogHref(
   next.producers.forEach((v) => sp.append("producer", v));
   next.regions.forEach((v) => sp.append("region", v));
   next.formats.forEach((v) => sp.append("format", v));
-  if (next.presidio) sp.set("presidio", next.presidio);
+  if (next.treasure) sp.set("treasure", next.treasure);
   if (next.q) sp.set("q", next.q);
   if (next.sort !== "relevance") sp.set("sort", next.sort);
   if (next.page > 1) sp.set("page", String(next.page));

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Vini naturali italiani e Presìdi Slow Food",
-    "description": "Lento importa vini naturali italiani e Presìdi Slow Food nel Regno Unito e nel Nord Europa — per la casa e per i professionisti."
+    "title": "Vini naturali italiani e Italian Food Treasures",
+    "description": "Lento importa vini naturali italiani e Italian Food Treasures nel Regno Unito e nel Nord Europa — per la casa e per i professionisti."
   },
   "common": {
     "skip": "Vai al contenuto",
@@ -13,7 +13,7 @@
     "main": "Navigazione principale",
     "menu": "Menu",
     "close": "Chiudi",
-    "tagline": "Vino naturale e Slow Food dall'Italia",
+    "tagline": "Vino naturale e Italian Food Treasures",
     "shop": "Shop",
     "wine": "Vini",
     "pantry": "Dispensa",
@@ -36,12 +36,12 @@
     "shop": "Shop",
     "about": "Lento",
     "help": "Assistenza",
-    "presidi": "Presìdi Slow Food",
+    "treasures": "Italian Food Treasures",
     "shipping": "Spedizioni e resi",
     "terms": "Condizioni di vendita",
     "privacy": "Privacy",
     "cookies": "Cookie",
-    "blurb": "Vini naturali di piccoli vignaioli italiani e cibi tutelati dai Presìdi Slow Food, spediti nel Regno Unito e nel Nord Europa.",
+    "blurb": "Vini naturali di piccoli vignaioli italiani e cibi tradizionali rari — i nostri Italian Food Treasures — spediti nel Regno Unito e nel Nord Europa.",
     "rights": "Tutti i diritti riservati.",
     "responsible": "Gli alcolici sono venduti solo a maggiorenni. Bevi responsabilmente.",
     "credits": "Crediti fotografici"
@@ -193,7 +193,7 @@
   },
   "product": {
     "new": "Novità",
-    "presidio": "Presìdio",
+    "treasure": "Food Treasure",
     "quantity": "Quantità",
     "add": "Aggiungi al carrello",
     "added": "{qty, plural, one {# aggiunto al carrello.} other {# aggiunti al carrello.}}",
@@ -214,7 +214,7 @@
       "so2": "SO₂ totale",
       "abv": "Alcol",
       "format": "Formato",
-      "presidio": "Presìdio Slow Food",
+      "treasure": "Italian Food Treasure",
       "ingredients": "Ingredienti",
       "shelfLife": "Conservazione",
       "appellation": "Denominazione",
@@ -232,7 +232,7 @@
   "shop": {
     "title": "Il catalogo",
     "breadcrumb": "Percorso",
-    "description": "Vini di piccoli vignaioli italiani che lavorano a mano e secondo tradizione — lieviti indigeni, botti vecchie, interventi minimi — e cibi tutelati dai Presìdi Slow Food.",
+    "description": "Vini di piccoli vignaioli italiani che lavorano a mano e secondo tradizione — lieviti indigeni, botti vecchie, interventi minimi — e i nostri Italian Food Treasures.",
     "results": "{count, plural, =0 {Nessun prodotto} one {# prodotto} other {# prodotti}}",
     "quick": {
       "all": "Tutti",
@@ -242,7 +242,7 @@
       "red": "Rossi",
       "sparkling": "Rifermentati",
       "pantry": "Dispensa",
-      "presidi": "Presìdi Slow Food",
+      "treasures": "Italian Food Treasures",
       "wine": "Vini"
     },
     "types": {
@@ -264,9 +264,9 @@
       "producer": "Produttore",
       "region": "Regione",
       "format": "Formato",
-      "presidio": "Presìdio Slow Food",
-      "presidio_yes": "Sì",
-      "presidio_no": "No",
+      "treasure": "Italian Food Treasures",
+      "treasure_yes": "Sì",
+      "treasure_no": "No",
       "selected": "selezionato",
       "active": "Filtri attivi",
       "remove": "Rimuovi filtro",
@@ -297,7 +297,7 @@
   "producers": {
     "kicker": "Le persone dietro le bottiglie",
     "title": "Produttori",
-    "description": "Lavoriamo con poche famiglie e cooperative che conosciamo di persona: vignaioli che coltivano senza chimica e custodi di cibi tutelati dai Presìdi Slow Food.",
+    "description": "Lavoriamo con poche famiglie e cooperative che conosciamo di persona: vignaioli che lavorano a mano e custodi di cibi tradizionali rari, i nostri Italian Food Treasures.",
     "founded": "Fondazione",
     "hectares": "Ettari",
     "products": "Prodotti",
@@ -306,8 +306,8 @@
     "farming": "Agricoltura",
     "range": "I prodotti",
     "readStory": "Leggi “{title}”",
-    "partnersTitle": "Produttori dei Presìdi",
-    "partnersBody": "Piccoli produttori che aderiscono ai Presìdi Slow Food: seguono un disciplinare comune per tenere in vita un cibo tradizionale e venderlo a un prezzo giusto."
+    "partnersTitle": "I produttori degli Italian Food Treasures",
+    "partnersBody": "Piccoli produttori che tengono in vita un cibo tradizionale, fatto senza fretta e venduto a un prezzo giusto."
   },
   "stories": {
     "kicker": "Journal",
@@ -322,12 +322,12 @@
   },
   "home": {
     "hero": {
-      "kicker": "Vino naturale e Presìdi Slow Food",
+      "kicker": "Vino naturale e Italian Food Treasures",
       "title": "Vini che si prendono il loro tempo.",
       "alt": "Una vigna nel tardo pomeriggio",
       "ctaStories": "Leggi le storie",
       "ctaShop": "Vai al catalogo",
-      "lead": "Lento vuol dire senza fretta. Portiamo i vini di vignaioli italiani che si prendono il loro tempo — dal Barolo all'Oltrepò, da Montalcino all'Irpinia — e i cibi salvati dai Presìdi Slow Food, sulle tavole del Regno Unito e del Nord Europa."
+      "lead": "Lento vuol dire senza fretta. Portiamo i vini di vignaioli italiani che si prendono il loro tempo — dal Barolo all'Oltrepò, da Montalcino all'Irpinia — e cibi tradizionali rari, i nostri Italian Food Treasures, sulle tavole del Regno Unito e del Nord Europa."
     },
     "manifesto": {
       "kicker": "Cosa cerchiamo",
@@ -339,9 +339,9 @@
         "title": "Fatti come una volta",
         "body": "Lieviti indigeni, fermentazioni lunghe, botti vecchie o anfore: vini che sanno del luogo, non della cantina."
       },
-      "presidi": {
+      "treasures": {
         "title": "Cibi da salvare",
-        "body": "Cibi tradizionali dei Presìdi Slow Food, acquistati direttamente al prezzo stabilito da chi li produce."
+        "body": "Cibi tradizionali prodotti in quantità minime, acquistati direttamente al prezzo stabilito da chi li fa."
       }
     },
     "stories": {
@@ -355,12 +355,12 @@
       "title": "Una prima selezione",
       "all": "Tutti i vini"
     },
-    "presidi": {
-      "kicker": "Presìdi Slow Food",
+    "treasures": {
+      "kicker": "Italian Food Treasures",
       "title": "La dispensa",
       "body": "La colatura di Cetara, le alici di menaica, i ceci di Cicerale, un formaggio stagionato in anfora: cibi prodotti in quantità minime da persone che non li hanno lasciati scomparire.",
-      "story": "Perché importiamo i Presìdi",
-      "shop": "Vai alla dispensa"
+      "story": "Leggi la storia",
+      "shop": "Vai agli Italian Food Treasures"
     },
     "producers": {
       "kicker": "Le persone",
@@ -527,6 +527,9 @@
     "licensed": "Foto con licenza libera",
     "illustrative": "Illustrativa: mostra il tipo di prodotto, non la confezione del produttore.",
     "retailer": "Foto delle bottiglie da enoteche online",
-    "retailerNote": "Usate solo per questa demo non pubblica, da sostituire con le foto dei produttori prima del lancio."
+    "retailerNote": "Usate solo per questa demo non pubblica, da sostituire con le foto dei produttori prima del lancio.",
+    "landscapes": "Foto di vigne e paesaggi",
+    "landscapesNote": "Foto con licenza libera delle zone in cui lavorano i nostri produttori. Mostrano il paesaggio della zona, non necessariamente le vigne del produttore.",
+    "home": "Home page"
   }
 }

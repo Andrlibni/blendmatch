@@ -82,8 +82,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/shop/
           { label: t("specs.format"), value: formatLabel(product) },
         ]
       : [
-          ...(product.presidio
-            ? [{ label: t("specs.presidio"), value: product.presidio }]
+          ...(product.treasure
+            ? [{ label: t("specs.treasure"), value: product.treasure }]
             : []),
           { label: t("specs.region"), value: `${region} · ${product.area}` },
           { label: t("specs.ingredients"), value: product.ingredients },

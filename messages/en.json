@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Natural Italian wine & Slow Food Presìdi",
-    "description": "Lento imports natural Italian wines and Slow Food Presìdi to the UK and Northern Europe — for home and for the trade."
+    "title": "Natural Italian wine & Italian Food Treasures",
+    "description": "Lento imports natural Italian wines and Italian Food Treasures to the UK and Northern Europe — for home and for the trade."
   },
   "common": {
     "skip": "Skip to content",
@@ -13,7 +13,7 @@
     "main": "Main navigation",
     "menu": "Menu",
     "close": "Close",
-    "tagline": "Natural wine & Slow Food from Italy",
+    "tagline": "Natural wine & Italian Food Treasures",
     "shop": "Shop",
     "wine": "Wine",
     "pantry": "Pantry",
@@ -36,12 +36,12 @@
     "shop": "Shop",
     "about": "Lento",
     "help": "Help",
-    "presidi": "Slow Food Presìdi",
+    "treasures": "Italian Food Treasures",
     "shipping": "Shipping & returns",
     "terms": "Terms of sale",
     "privacy": "Privacy",
     "cookies": "Cookies",
-    "blurb": "Natural wines from small Italian growers and foods protected by Slow Food Presìdi, shipped to the UK and Northern Europe.",
+    "blurb": "Natural wines from small Italian growers and rare traditional foods — our Italian Food Treasures — shipped to the UK and Northern Europe.",
     "rights": "All rights reserved.",
     "responsible": "Alcohol is sold only to people aged 18 or over. Please drink responsibly.",
     "credits": "Photo credits"
@@ -193,7 +193,7 @@
   },
   "product": {
     "new": "New",
-    "presidio": "Presìdio",
+    "treasure": "Food Treasure",
     "quantity": "Quantity",
     "add": "Add to cart",
     "added": "{qty, plural, one {# added to your cart.} other {# added to your cart.}}",
@@ -214,7 +214,7 @@
       "so2": "Total SO₂",
       "abv": "Alcohol",
       "format": "Format",
-      "presidio": "Slow Food Presìdio",
+      "treasure": "Italian Food Treasure",
       "ingredients": "Ingredients",
       "shelfLife": "Shelf life",
       "appellation": "Appellation",
@@ -232,7 +232,7 @@
   "shop": {
     "title": "The catalogue",
     "breadcrumb": "Breadcrumb",
-    "description": "Wines from small Italian growers who work by hand and by tradition — native yeasts, old casks, little intervention — and foods protected by Slow Food Presìdi.",
+    "description": "Wines from small Italian growers who work by hand and by tradition — native yeasts, old casks, little intervention — and our Italian Food Treasures.",
     "results": "{count, plural, =0 {No products} one {# product} other {# products}}",
     "quick": {
       "all": "All",
@@ -242,7 +242,7 @@
       "red": "Red",
       "sparkling": "Sparkling",
       "pantry": "Pantry",
-      "presidi": "Presìdi Slow Food",
+      "treasures": "Italian Food Treasures",
       "wine": "Wine"
     },
     "types": {
@@ -259,9 +259,9 @@
       "producer": "Producer",
       "region": "Region",
       "format": "Format",
-      "presidio": "Slow Food Presìdio",
-      "presidio_yes": "Yes",
-      "presidio_no": "No",
+      "treasure": "Italian Food Treasures",
+      "treasure_yes": "Yes",
+      "treasure_no": "No",
       "selected": "selected",
       "active": "Active filters",
       "remove": "Remove filter",
@@ -292,7 +292,7 @@
   "producers": {
     "kicker": "The people behind the bottles",
     "title": "Producers",
-    "description": "We work with a few families and cooperatives we know personally: growers who farm without chemicals, and the keepers of foods protected by Slow Food Presìdi.",
+    "description": "We work with a few families and cooperatives we know personally: growers who farm by hand, and the keepers of rare traditional foods — our Italian Food Treasures.",
     "founded": "Founded",
     "hectares": "Hectares",
     "products": "Products",
@@ -301,8 +301,8 @@
     "farming": "Farming",
     "range": "The range",
     "readStory": "Read “{title}”",
-    "partnersTitle": "Presìdi partners",
-    "partnersBody": "Small producers who belong to Slow Food Presìdi: they follow shared rules to keep a traditional food alive, and sell it at a fair price."
+    "partnersTitle": "Italian Food Treasures makers",
+    "partnersBody": "Small producers who keep a traditional food alive, made the slow way and sold at a fair price."
   },
   "stories": {
     "kicker": "Journal",
@@ -317,12 +317,12 @@
   },
   "home": {
     "hero": {
-      "kicker": "Natural wine & Slow Food Presìdi",
+      "kicker": "Natural wine & Italian Food Treasures",
       "title": "Wines that take their time.",
       "alt": "A vineyard in the late afternoon",
       "ctaStories": "Read our stories",
       "ctaShop": "Shop the catalogue",
-      "lead": "Lento means slow. We bring wines from Italian growers who take their time — from Barolo to the Oltrepò, from Montalcino to Irpinia — and foods kept alive by Slow Food Presìdi, to tables in the UK and Northern Europe."
+      "lead": "Lento means slow. We bring wines from Italian growers who take their time — from Barolo to the Oltrepò, from Montalcino to Irpinia — and rare traditional foods, our Italian Food Treasures, to tables in the UK and Northern Europe."
     },
     "manifesto": {
       "kicker": "What we look for",
@@ -334,9 +334,9 @@
         "title": "Made as it used to be",
         "body": "Native yeasts, long fermentations, old casks or amphorae: wines that taste of a place, not of the cellar."
       },
-      "presidi": {
+      "treasures": {
         "title": "Foods worth saving",
-        "body": "Traditional foods from Slow Food Presìdi, bought directly at the price their makers set."
+        "body": "Traditional foods made in tiny quantities, bought directly at the price their makers set."
       }
     },
     "stories": {
@@ -350,12 +350,12 @@
       "title": "A first selection",
       "all": "All wines"
     },
-    "presidi": {
-      "kicker": "Slow Food Presìdi",
+    "treasures": {
+      "kicker": "Italian Food Treasures",
       "title": "The pantry",
       "body": "Colatura from Cetara, anchovies caught with the menaica net, chickpeas from Cicerale, a cheese aged in amphorae: foods made in tiny quantities by people who refused to let them disappear.",
-      "story": "Why we import Presìdi",
-      "shop": "Shop the pantry"
+      "story": "Read the story",
+      "shop": "Shop the treasures"
     },
     "producers": {
       "kicker": "The people",
@@ -522,6 +522,9 @@
     "licensed": "Freely licensed photos",
     "illustrative": "Illustrative: shows the type of product, not the producer's own packaging.",
     "retailer": "Bottle photos from online wine shops",
-    "retailerNote": "Used only for this non-public demo and to be replaced with photos supplied by the producers before launch."
+    "retailerNote": "Used only for this non-public demo and to be replaced with photos supplied by the producers before launch.",
+    "landscapes": "Vineyard and landscape photos",
+    "landscapesNote": "Freely licensed photos of the areas our producers work in. They show the landscape of each zone, not necessarily the producer's own vineyards.",
+    "home": "Home page"
   }
 }

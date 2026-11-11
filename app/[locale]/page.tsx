@@ -18,9 +18,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   const wines = products.filter((p) => p.kind === "wine");
   const selection = [...wines.filter((p) => p.featured), ...wines.filter((p) => !p.featured && p.isNew)].slice(0, 4);
-  const pantry = products.filter((p) => p.presidio).slice(0, 3);
+  const pantry = products.filter((p) => p.treasure).slice(0, 3);
   const producerStories = stories.filter((s) => s.producer);
-  const presidiStory = stories.find((s) => !s.producer);
+  const treasuresStory = stories.find((s) => !s.producer);
   const featuredProducers = producers.filter((p) => p.featured);
 
   return (
@@ -76,7 +76,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           {t("hero.lead")}
         </p>
         <ul className="mx-auto mt-20 grid max-w-5xl gap-10 border-t hairline pt-10 sm:grid-cols-3 sm:gap-12">
-          {(["growers", "cellar", "presidi"] as const).map((key, i) => (
+          {(["growers", "cellar", "treasures"] as const).map((key, i) => (
             <li key={key}>
               <p className="font-serif text-lg text-muted">0{i + 1}</p>
               <h2 className="eyebrow mt-3">{t(`manifesto.${key}.title`)}</h2>
@@ -168,25 +168,25 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </ul>
       </section>
 
-      {/* Presìdi */}
-      {presidiStory && (
-        <section className="mt-28 bg-ivory-deep py-20 sm:py-28" aria-labelledby="presidi">
+      {/* Italian Food Treasures */}
+      {treasuresStory && (
+        <section className="mt-28 bg-ivory-deep py-20 sm:py-28" aria-labelledby="treasures">
           <div className="mx-auto grid max-w-[1400px] gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.6fr] lg:gap-20">
             <div>
-              <p className="eyebrow text-muted">{t("presidi.kicker")}</p>
-              <h2 id="presidi" className="display mt-4 text-4xl sm:text-5xl">
-                {t("presidi.title")}
+              <p className="eyebrow text-muted">{t("treasures.kicker")}</p>
+              <h2 id="treasures" className="display mt-4 text-4xl sm:text-5xl">
+                {t("treasures.title")}
               </h2>
-              <p className="mt-6 leading-relaxed">{t("presidi.body")}</p>
+              <p className="mt-6 leading-relaxed">{t("treasures.body")}</p>
               <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
                 <Link
-                  href={`/stories/${presidiStory.slug}`}
+                  href={`/stories/${treasuresStory.slug}`}
                   className="eyebrow border-b border-ink pb-1 hover:text-wine"
                 >
-                  {t("presidi.story")} →
+                  {t("treasures.story")} →
                 </Link>
-                <Link href="/shop?category=presidi" className="eyebrow border-b border-ink pb-1 hover:text-wine">
-                  {t("presidi.shop")} →
+                <Link href="/shop?category=treasures" className="eyebrow border-b border-ink pb-1 hover:text-wine">
+                  {t("treasures.shop")} →
                 </Link>
               </div>
             </div>

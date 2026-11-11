@@ -55,13 +55,13 @@ export async function FilterSidebar({ query }: Props) {
       label: (o) => o.label,
     },
     {
-      key: "presidio",
-      title: t("filters.presidio"),
-      options: facets.presidio,
-      isActive: (v) => query.presidio === v,
+      key: "treasure",
+      title: t("filters.treasure"),
+      options: facets.treasure,
+      isActive: (v) => query.treasure === v,
       href: (v) =>
-        catalogHref(query, { presidio: query.presidio === v ? undefined : (v as "yes" | "no") }),
-      label: (o) => t(`filters.presidio_${o.value}`),
+        catalogHref(query, { treasure: query.treasure === v ? undefined : (v as "yes" | "no") }),
+      label: (o) => t(`filters.treasure_${o.value}`),
     },
   ];
 

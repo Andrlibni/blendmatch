@@ -86,32 +86,31 @@ Paolo Clemente's vineyard in San Martino Valle Caudina is exactly that: a hectar
 His main wine is called 33/33/33, after the three grapes in equal shares. The vineyard is farmed biodynamically and has been Demeter certified since 2017; in the cellar the juice ferments on its own, with time on the skins, and is bottled without filtration. A little of each harvest goes into Michelangelo, a magnum aged in wood for the long haul.`,
   },
   {
-    slug: "why-we-import-presidi",
-    kicker: "Slow Food Presìdi",
-    title: "Why we import Presìdi",
+    slug: "italian-food-treasures",
+    kicker: "Italian Food Treasures",
+    title: "Italian Food Treasures",
     excerpt:
       "A drop of colatura, a handful of Cicerale chickpeas: small foods kept alive by the people who still make them, and by those who buy them.",
     products: [
       "colatura-di-alici-di-cetara",
       "alici-di-menaica",
       "cece-di-cicerale",
-      "cicerchia-di-serra-de-conti",
-      "fagiolo-zolfino",
+      "conciato-romano",
     ],
     readingMinutes: 4,
-    body: `A Slow Food Presìdio is a promise made by a group of producers. They agree on how a traditional food should be made — which variety, which area, which season, which technique — and Slow Food helps them tell its story and find people who will pay a fair price for it. There are more than three hundred in Italy.
+    body: `Italy is full of foods that exist in a few tonnes a year: a bean grown on one plain, a cheese aged in amphorae in one valley, anchovies caught with one kind of net. They survive because a handful of families decided to keep making them the slow, difficult, traditional way. We call them our Italian Food Treasures, and we started with Campania.
 
 ## Colatura, the old way
 
-In Cetara, on the Amalfi Coast, anchovies fished between March and July are gutted, layered with sea salt in chestnut barrels and pressed under stones. Over many months a clear amber liquid forms. It is collected, poured back over the fish, and finally drawn off through a hole in the bottom of the barrel. This is colatura, the descendant of the Roman garum. A few drops on spaghetti with garlic and oil are enough.
+In Cetara, on the Amalfi Coast, anchovies fished between March and July are gutted, layered with sea salt in wooden barrels and pressed under weights. Over many months a clear amber liquid forms. It is collected, poured back over the fish, and finally drawn off through a hole in the bottom of the barrel. This is colatura, the descendant of the Roman garum. A few drops on spaghetti with garlic and oil are enough.
 
-## Seeds worth saving
+## From the sea and the hills
 
-Cicerchia from Serra de' Conti, zolfino beans from the Pratomagno, lentils from the island of Ustica: legumes that fed generations of farming families and then almost disappeared, because their yields were low and their work was hard. Each Presìdio is a handful of farms that decided to keep sowing them.
+At Pisciotta, in the Cilento, a few boats still fish at night with the menaica, a net that lets the small fish go. In Cicerale, a town named after its chickpeas, Giovanna Voria kept the original seed alive. Near Caserta the Lombardi family ages conciato romano in terracotta jars, as in Roman times.
 
 ## What it means to buy them
 
-We buy directly from these producers, at prices they set, and we sell to people and restaurants who will use them well. It is a very small trade. But for a food that exists in a few tonnes a year, a few hundred jars sold in Copenhagen or London can be the difference between keeping on and giving up.`,
+We buy directly from these producers, at prices they set, and we sell to people and restaurants who will use them well. It is a very small trade. But for a food made in such tiny quantities, a few hundred jars sold in Copenhagen or London can be the difference between keeping on and giving up.`,
   },
 ];
 

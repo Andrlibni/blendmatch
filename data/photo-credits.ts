@@ -122,5 +122,177 @@ export const photoCredits: Record<string, PhotoCredit> = {
     "kind": "retailer",
     "source": "Callmewine",
     "url": "https://cdn.shopify.com/s/files/1/0650/4356/2708/files/nebbiolo-giuseppe-rinaldi-2022_61451_742bdc02-b81b-49b3-bd39-efd4c4bc1f19.jpg"
+  },
+  "colatura-di-alici-di-cetara": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Gugerell",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Colatura_di_alici_a.jpg",
+    "title": "Colatura di alici a.jpg"
+  },
+  "alici-di-menaica": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Roger469",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Acciughe_sotto_sale.arbanella_di_acciughe_mature.jpg",
+    "title": "Acciughe sotto sale.arbanella di acciughe mature.jpg"
+  },
+  "cece-di-cicerale": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Chickpeas%F0%9F%AB%98.jpg",
+    "title": "Chickpeas🫘.jpg"
+  },
+  "oliva-salella-ammaccata": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Fresh_green_olives_and_black_olives_served_at_a_food_display.jpg",
+    "title": "Fresh green olives and black olives served at a food display.jpg"
+  },
+  "conciato-romano": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Jan-Tore Egge",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Pecorino_Metello.jpg",
+    "title": "Pecorino Metello.jpg"
+  },
+  "fagiolo-dente-di-morto": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:White_kidney_beans%F0%9F%AB%98.jpg",
+    "title": "White kidney beans🫘.jpg"
+  },
+  "antichi-pomodori-di-napoli-pelati": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Anna.Massini",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Pomodori_San_Marzano_in_maturazione_-_biologici.jpg",
+    "title": "Pomodori San Marzano in maturazione - biologici.jpg"
+  },
+  "miele-dei-prati-del-matese": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Dipper_stick_and_honey_in_a_jar.jpg",
+    "title": "Dipper stick and honey in a jar.jpg"
+  },
+  "pecorino-di-carmasciano": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Pecorino_Rosso_Volterrano_one_Quarter_on_whole_TOTAL.jpg",
+    "title": "Pecorino Rosso Volterrano one Quarter on whole TOTAL.jpg"
+  },
+  "fico-monnato-di-prignano": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Ranjithkumar Murugesan",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:DRIED_FIGS.jpg",
+    "title": "DRIED FIGS.jpg"
+  }
+};
+
+/** Landscape photos for the home page, producers and stories, keyed by "folder/slug". */
+export const editorialCredits: Record<string, Extract<PhotoCredit, { kind: "licensed" }>> = {
+  "home/hero": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Giorgio Galeotti",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Vineyards_-_Barolo,_Cuneo,_Itay_-_November_2,_2021.jpg",
+    "title": "Vineyards - Barolo, Cuneo, Itay - November 2, 2021.jpg"
+  },
+  "producers/cascina-fontana": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Christoph Strässler",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Castiglione_Falletto,_Piemonte,_Italy.jpg",
+    "title": "Castiglione Falletto, Piemonte, Italy.jpg"
+  },
+  "producers/giuseppe-rinaldi": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Christoph Strässler",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Barolo,_Piemonte,_Italy.jpg",
+    "title": "Barolo, Piemonte, Italy.jpg"
+  },
+  "producers/lino-maga": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Terensky",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:%22Monte%22_Fratello_-_panoramio.jpg",
+    "title": "\"Monte\" Fratello - panoramio.jpg"
+  },
+  "producers/vallisassoli": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Decan",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Cervinara_-_Partenio_visto_da_Via_Taiano.jpg",
+    "title": "Cervinara - Partenio visto da Via Taiano.jpg"
+  },
+  "producers/podere-le-ripi": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Tommaso laviano",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Camigliano(frazione_montalcino)-vista-colline-06.jpg",
+    "title": "Camigliano(frazione montalcino)-vista-colline-06.jpg"
+  },
+  "producers/marco-tinessa": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "VallVit",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Solopaca,_vigne_e_montagne_2.jpg",
+    "title": "Solopaca, vigne e montagne 2.jpg"
+  },
+  "producers/le-boncie": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Tom Chance",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Vineyards_in_the_Chianti_Classico_valleys.jpg",
+    "title": "Vineyards in the Chianti Classico valleys.jpg"
+  },
+  "stories/barbacarlo-a-name-won-in-court": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Terensky",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Da_Sant%27Antonino,_verso_Sud_-_panoramio.jpg",
+    "title": "Da Sant'Antonino, verso Sud - panoramio.jpg"
+  },
+  "stories/barolo-come-una-volta": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Christoph Strässler",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Castiglione_Falletto_and_La_Morra,_Piemonte,_Italy.jpg",
+    "title": "Castiglione Falletto and La Morra, Piemonte, Italy.jpg"
+  },
+  "stories/leaving-the-appellation": {
+    "kind": "licensed",
+    "source": "Wikimedia Commons",
+    "author": "Anna.Massini",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Campagna_nei_pressi_di_Castelnuovo_Berardenga.jpg",
+    "title": "Campagna nei pressi di Castelnuovo Berardenga.jpg"
   }
 };

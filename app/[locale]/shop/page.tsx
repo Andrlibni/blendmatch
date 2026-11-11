@@ -58,11 +58,11 @@ export default async function ShopPage({ params, searchParams }: PageProps<"/[lo
       label: v,
       href: catalogHref(query, { formats: query.formats.filter((x) => x !== v) }),
     })),
-    ...(query.presidio
+    ...(query.treasure
       ? [
           {
-            label: t(`filters.presidio_${query.presidio}`),
-            href: catalogHref(query, { presidio: undefined }),
+            label: t(`filters.treasure_${query.treasure}`),
+            href: catalogHref(query, { treasure: undefined }),
           },
         ]
       : []),
@@ -96,7 +96,7 @@ export default async function ShopPage({ params, searchParams }: PageProps<"/[lo
             <li key={c}>
               <QuickLink
                 href={catalogHref(
-                  { ...query, types: [], presidio: undefined },
+                  { ...query, types: [], treasure: undefined },
                   { category: query.category === c ? undefined : c },
                 )}
                 active={query.category === c}

@@ -26,8 +26,8 @@ type BaseProduct = {
   vatRateIT: number;
   isNew?: boolean;
   featured?: boolean;
-  /** Name of the Slow Food Presìdio, when the product belongs to one. */
-  presidio?: string;
+  /** Name of the traditional food, when the product is one of our Italian Food Treasures. */
+  treasure?: string;
   /** One line used on cards and in meta descriptions. */
   short: string;
   tastingNote: string;

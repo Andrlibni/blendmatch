@@ -1,6 +1,6 @@
-# Lento — vini naturali italiani e Presìdi Slow Food
+# Lento — vini naturali italiani e Italian Food Treasures
 
-E-commerce di **Lento** (nome provvisorio), importatore di vini naturali italiani e prodotti dei Presìdi Slow Food per il Regno Unito e il Nord Europa (DK, SE, FI, NO, NL, BE, DE, AT, IE). Serve due pubblici: **privati (B2C)** e **ristoranti, enoteche e negozi (B2B / Trade)**.
+E-commerce di **Lento** (nome provvisorio), importatore di vini naturali italiani e prodotti dei Italian Food Treasures per il Regno Unito e il Nord Europa (DK, SE, FI, NO, NL, BE, DE, AT, IE). Serve due pubblici: **privati (B2C)** e **ristoranti, enoteche e negozi (B2B / Trade)**.
 
 Stack: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · next-intl · Auth.js v5 · Prisma · Zod. Nessuna libreria UI: tutti i componenti sono scritti a mano.
 
@@ -50,7 +50,7 @@ In sviluppo la pagina di login mostra anche questo elenco.
 ```
 app/
   [locale]/                 tutte le pagine, con prefisso lingua (/en, /it, …)
-    page.tsx                Home narrativa: hero, manifesto, storie, selezione, Presìdi, produttori, Trade
+    page.tsx                Home narrativa: hero, manifesto, storie, selezione, Italian Food Treasures, produttori, Trade
     shop/                   catalogo (filtri, ordinamento, ricerca, paginazione) e scheda prodotto
     producers/  stories/    produttori e Storie (journal)
     trade/                  condizioni B2B, modulo di richiesta, login, area account
@@ -102,9 +102,9 @@ I prodotti sono in **`data/products.ts`**, tipizzati da `data/types.ts`. Per agg
 }
 ```
 
-I prodotti di dispensa usano `kind: "pantry"`, `category: "pantry"`, `presidio` (nome del Presìdio, se presente), `ingredients` e `shelfLife` al posto dei campi tecnici del vino.
+I prodotti di dispensa usano `kind: "pantry"`, `category: "pantry"`, `treasure` (nome del cibo tradizionale, se è un Italian Food Treasure), `ingredients` e `shelfLife` al posto dei campi tecnici del vino.
 
-I filtri del catalogo (tipologia, produttore, regione, formato, Presìdio) e i relativi conteggi si generano da soli a partire dai dati.
+I filtri del catalogo (tipologia, produttore, regione, formato, Italian Food Treasures) e i relativi conteggi si generano da soli a partire dai dati.
 
 **Passare a un CMS o a Shopify:** il resto del codice legge i prodotti solo attraverso `products`, `getProduct()` e `productsByProducer()`. Basta reimplementare queste funzioni su un'API esterna (Shopify Storefront, Sanity, …) mantenendo il tipo `Product`.
 

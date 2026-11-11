@@ -12,10 +12,10 @@ export function ProductCard({ product, priority }: { product: Product; priority?
   return (
     <article className="group relative flex flex-col">
       <ProductImage product={product} priority={priority} />
-      {(product.isNew || product.presidio) && (
+      {(product.isNew || product.treasure) && (
         <p className="eyebrow absolute left-3 top-3 flex gap-2 text-[0.625rem]">
           {product.isNew && <span className="bg-ivory px-2 py-1">{t("new")}</span>}
-          {product.presidio && <span className="bg-ivory px-2 py-1 text-wine">{t("presidio")}</span>}
+          {product.treasure && <span className="bg-ivory px-2 py-1 text-wine">{t("treasure")}</span>}
         </p>
       )}
       <div className="mt-5 flex flex-1 flex-col gap-1.5">
