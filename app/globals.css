@@ -157,45 +157,24 @@
   100% { transform: scaleX(0.92); }
 }
 
-/* Follower cursor */
-.cursor-fx { transition: opacity 0.3s; }
-.cursor-ring-pos, .cursor-dot-pos {
-  position: fixed; left: 0; top: 0; z-index: 70; pointer-events: none; will-change: transform;
+/* Emoji cursors (mouse only, switched on by components/fx/Cursor.tsx) */
+html.emoji-cursor,
+html.emoji-cursor body {
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%8D%BE%3C/text%3E%3C/svg%3E") 6 4, auto;
 }
-.cursor-ring {
-  position: absolute; left: -18px; top: -18px; width: 36px; height: 36px;
-  border: 1px solid color-mix(in srgb, var(--color-wine) 55%, transparent);
-  border-radius: 9999px;
-  display: grid; place-items: center;
-  transition: width 0.35s var(--ease-soft), height 0.35s var(--ease-soft), left 0.35s var(--ease-soft),
-    top 0.35s var(--ease-soft), background-color 0.35s, border-color 0.35s;
+html.emoji-cursor :is(a, button, select, summary, label, [role="button"], [data-cursor="view"]) {
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%8D%B7%3C/text%3E%3C/svg%3E") 8 4, pointer;
 }
-.cursor-ring.is-link {
-  left: -26px; top: -26px; width: 52px; height: 52px;
-  background: color-mix(in srgb, var(--color-wine) 8%, transparent);
+html.emoji-cursor :is(input, textarea, [contenteditable="true"]) {
+  cursor: text;
 }
-.cursor-ring.is-view {
-  left: -44px; top: -44px; width: 88px; height: 88px;
-  background: var(--color-wine); border-color: var(--color-wine);
+html.emoji-cursor :is(button:disabled, [aria-disabled="true"]) {
+  cursor: not-allowed;
 }
-.cursor-ring.is-loading {
-  border-color: transparent;
-  border-top-color: var(--color-olive);
-  border-right-color: var(--color-wine);
-  border-width: 2px;
-  animation: cursor-spin 0.8s linear infinite;
+html.emoji-cursor.is-navigating,
+html.emoji-cursor.is-navigating * {
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%A5%82%3C/text%3E%3C/svg%3E") 8 4, progress !important;
 }
-@keyframes cursor-spin { to { rotate: 360deg; } }
-.cursor-label {
-  font-family: var(--font-sans); font-size: 0.625rem; font-weight: 500; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--color-ivory); opacity: 0; transition: opacity 0.2s;
-}
-.cursor-ring.is-view .cursor-label { opacity: 1; }
-.cursor-dot {
-  position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border-radius: 9999px;
-  background: var(--color-wine); transition: opacity 0.2s, scale 0.2s;
-}
-.cursor-dot.is-hidden { opacity: 0; scale: 0.4; }
 
 /* Scroll reveal */
 .reveal-pending {
