@@ -80,7 +80,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           {(
             [
               { key: "growers", bg: "bg-wine-wash", accent: "text-wine", rule: "bg-wine/40" },
-              { key: "cellar", bg: "bg-terracotta-wash", accent: "text-terracotta", rule: "bg-terracotta/40" },
+              { key: "cellar", bg: "bg-ivory-deep", accent: "text-terracotta", rule: "bg-terracotta/40" },
               { key: "treasures", bg: "bg-olive-wash", accent: "text-olive", rule: "bg-olive/40" },
             ] as const
           ).map(({ key, bg, accent, rule }, i) => (
