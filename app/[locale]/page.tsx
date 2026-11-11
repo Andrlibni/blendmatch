@@ -75,12 +75,25 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <p className="mx-auto mt-8 max-w-4xl text-center font-serif text-3xl leading-[1.25] text-wine sm:text-[2.6rem]">
           {t("hero.lead")}
         </p>
-        <ul className="mx-auto mt-20 grid max-w-5xl gap-10 border-t hairline pt-10 sm:grid-cols-3 sm:gap-12">
+        {/* Three principles: quiet tonal tiles separated by hairlines */}
+        <ul className="mx-auto mt-20 grid max-w-6xl gap-px bg-line sm:mt-24 md:grid-cols-3">
           {(["growers", "cellar", "treasures"] as const).map((key, i) => (
-            <li key={key}>
-              <p className="font-serif text-lg text-muted">0{i + 1}</p>
-              <h2 className="eyebrow mt-3">{t(`manifesto.${key}.title`)}</h2>
-              <p className="mt-3 text-[0.95rem] leading-relaxed">{t(`manifesto.${key}.body`)}</p>
+            <li
+              key={key}
+              className="flex min-h-[18rem] flex-col bg-ivory-deep px-8 py-10 sm:px-10 sm:py-12 md:min-h-[22rem] lg:px-12"
+            >
+              <span aria-hidden="true" className="font-serif text-7xl font-normal leading-none text-wine/25">
+                {i + 1}
+              </span>
+              <div className="mt-auto pt-12">
+                <span aria-hidden="true" className="block h-px w-10 bg-wine/40" />
+                <h2 className="mt-6 font-serif text-[1.75rem] font-medium leading-tight text-ink">
+                  {t(`manifesto.${key}.title`)}
+                </h2>
+                <p className="mt-3 max-w-xs text-[0.95rem] leading-relaxed text-muted">
+                  {t(`manifesto.${key}.body`)}
+                </p>
+              </div>
             </li>
           ))}
         </ul>
