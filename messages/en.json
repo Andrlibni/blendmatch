@@ -287,6 +287,17 @@
     "empty": {
       "title": "Nothing here — yet.",
       "body": "Try removing a filter or searching for something else."
+    },
+    "intro": {
+      "all": "Everything here was made slowly, by someone whose name we know: wines from small Italian growers, and foods from the families who refused to let them disappear.",
+      "wine": "Wine as it used to be made: grapes picked by hand, yeasts from the vineyard, years in old casks. Bottles that taste of a hill, a season and a family — not of a recipe.",
+      "new": "Just arrived from Italy: the bottles and jars we fell for on our latest visits, from growers we go back to every year.",
+      "orange": "White grapes left on their skins, as farmers along Italy's borders always did. Amber, savoury and alive, with a grip that asks for food and good company.",
+      "white": "Whites from old pergolas and volcanic slopes, made without make-up: salt, herbs and light, and the quiet confidence of a place.",
+      "red": "Reds made with patience, in old wood and clay, by growers who would rather wait a year than hurry a wine. To be poured at a long table and remembered.",
+      "sparkling": "Refermented in the bottle, the farmhouse way: cloudy, dry and alive, just as it was drunk at home.",
+      "pantry": "The Italian kitchen begins here. Anchovies, beans, olives, honey and cheese made in small batches by the people who grow, fish and age them — the flavours a grandmother would recognise.",
+      "treasures": "Foods made in a few tonnes a year and kept alive by a handful of families. Every jar you open is a reason for them to make it again next year."
     }
   },
   "producers": {
@@ -322,7 +333,7 @@
       "alt": "A vineyard in the late afternoon",
       "ctaStories": "Read our stories",
       "ctaShop": "Shop the catalogue",
-      "lead": "Lento means slow. We bring wines from Italian growers who take their time — from Barolo to the Oltrepò, from Montalcino to Irpinia — and rare traditional foods, our Italian Food Treasures, to tables in the UK and Northern Europe."
+      "lead": "Lento means slow. We bring wines from Italian growers who take their time, and rare traditional foods — our Italian Food Treasures — to tables in the UK and Northern Europe."
     },
     "manifesto": {
       "kicker": "What we look for",

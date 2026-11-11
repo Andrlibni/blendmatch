@@ -292,6 +292,17 @@
     "empty": {
       "title": "Nessun risultato.",
       "body": "Prova a rimuovere un filtro o a cercare altro."
+    },
+    "intro": {
+      "all": "Tutto quello che trovi qui è stato fatto senza fretta, da persone di cui conosciamo il nome: vini di piccoli vignaioli italiani e cibi di famiglie che non li hanno lasciati scomparire.",
+      "wine": "Il vino come si faceva una volta: uva raccolta a mano, lieviti della vigna, anni in botti vecchie. Bottiglie che sanno di una collina, di un'annata e di una famiglia, non di una ricetta.",
+      "new": "Appena arrivati dall'Italia: le bottiglie e i vasetti di cui ci siamo innamorati nelle ultime visite, da vignaioli da cui torniamo ogni anno.",
+      "orange": "Uve bianche lasciate sulle loro bucce, come hanno sempre fatto i contadini lungo i confini d'Italia. Ambrati, sapidi e vivi, chiedono cibo e buona compagnia.",
+      "white": "Bianchi da vecchie pergole e pendii vulcanici, fatti senza trucco: sale, erbe, luce e la tranquilla sicurezza di un luogo.",
+      "red": "Rossi fatti con pazienza, in legno vecchio e argilla, da vignaioli che preferiscono aspettare un anno piuttosto che affrettare un vino. Da versare a una tavola lunga e ricordare.",
+      "sparkling": "Rifermentati in bottiglia, come nelle cascine: torbidi, secchi e vivi, come si bevevano a casa.",
+      "pantry": "La cucina italiana comincia da qui. Alici, fagioli, olive, miele e formaggi fatti in piccole quantità da chi li coltiva, li pesca e li stagiona: i sapori che una nonna riconoscerebbe.",
+      "treasures": "Cibi prodotti in poche tonnellate l'anno e tenuti in vita da una manciata di famiglie. Ogni vasetto che apri è un motivo per farlo di nuovo l'anno prossimo."
     }
   },
   "producers": {
@@ -327,7 +338,7 @@
       "alt": "Una vigna nel tardo pomeriggio",
       "ctaStories": "Leggi le storie",
       "ctaShop": "Vai al catalogo",
-      "lead": "Lento vuol dire senza fretta. Portiamo i vini di vignaioli italiani che si prendono il loro tempo — dal Barolo all'Oltrepò, da Montalcino all'Irpinia — e cibi tradizionali rari, i nostri Italian Food Treasures, sulle tavole del Regno Unito e del Nord Europa."
+      "lead": "Lento vuol dire senza fretta. Portiamo i vini di vignaioli italiani che si prendono il loro tempo, e cibi tradizionali rari — i nostri Italian Food Treasures — sulle tavole del Regno Unito e del Nord Europa."
     },
     "manifesto": {
       "kicker": "Cosa cerchiamo",

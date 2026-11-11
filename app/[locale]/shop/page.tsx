@@ -27,7 +27,7 @@ export async function generateMetadata({
   const title = query.category ? t(`quick.${query.category}`) : t("title");
   return {
     title,
-    description: t("description"),
+    description: t(`intro.${query.category ?? "all"}`),
     alternates: { canonical: `/${locale}${catalogHref(query, { page: query.page })}` },
   };
 }
@@ -86,7 +86,7 @@ export default async function ShopPage({ params, searchParams }: PageProps<"/[lo
         </nav>
         <h1 className="display mt-6 text-5xl sm:text-6xl">{title}</h1>
         <p className="mx-auto mt-5 max-w-2xl text-[0.95rem] leading-relaxed text-muted">
-          {t("description")}
+          {t(`intro.${query.category ?? "all"}`)}
         </p>
         <ul className="mt-10 flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
           <li>
