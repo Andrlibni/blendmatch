@@ -75,25 +75,25 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <p className="mx-auto mt-8 max-w-4xl text-center font-serif text-3xl leading-[1.25] text-wine sm:text-[2.6rem]">
           {t("hero.lead")}
         </p>
-        {/* Three principles: quiet tonal tiles separated by hairlines */}
-        <ul className="mx-auto mt-20 grid max-w-6xl gap-px bg-line sm:mt-24 md:grid-cols-3">
-          {(["growers", "cellar", "treasures"] as const).map((key, i) => (
-            <li
-              key={key}
-              className="flex min-h-[18rem] flex-col bg-ivory-deep px-8 py-10 sm:px-10 sm:py-12 md:min-h-[22rem] lg:px-12"
-            >
-              <span aria-hidden="true" className="font-serif text-7xl font-normal leading-none text-wine/25">
-                {i + 1}
-              </span>
-              <div className="mt-auto pt-12">
-                <span aria-hidden="true" className="block h-px w-10 bg-wine/40" />
-                <h2 className="mt-6 font-serif text-[1.75rem] font-medium leading-tight text-ink">
-                  {t(`manifesto.${key}.title`)}
-                </h2>
-                <p className="mt-3 max-w-xs text-[0.95rem] leading-relaxed text-muted">
-                  {t(`manifesto.${key}.body`)}
-                </p>
-              </div>
+        {/* Three principles: earthy colour blocks, content aligned from the top */}
+        <ul className="mx-auto mt-20 grid max-w-6xl gap-4 sm:mt-24 md:grid-cols-3 md:gap-5">
+          {(
+            [
+              { key: "growers", bg: "bg-wine" },
+              { key: "cellar", bg: "bg-terracotta" },
+              { key: "treasures", bg: "bg-olive" },
+            ] as const
+          ).map(({ key, bg }, i) => (
+            <li key={key} className={`${bg} relative overflow-hidden px-8 pb-10 pt-9 text-ivory sm:px-10 sm:pb-12`}>
+              <span aria-hidden="true" className="grain pointer-events-none absolute inset-0" />
+              <p className="eyebrow relative text-ivory/70">0{i + 1}</p>
+              <h2 className="relative mt-8 font-serif text-[1.9rem] font-medium leading-tight">
+                {t(`manifesto.${key}.title`)}
+              </h2>
+              <span aria-hidden="true" className="relative mt-5 block h-px w-10 bg-ivory/50" />
+              <p className="relative mt-5 max-w-xs text-[0.95rem] leading-relaxed text-ivory/85">
+                {t(`manifesto.${key}.body`)}
+              </p>
             </li>
           ))}
         </ul>
