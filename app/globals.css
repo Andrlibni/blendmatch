@@ -11,6 +11,10 @@
   --color-wine-dark: #4f1811;
   --color-terracotta: #8f4a2e;
   --color-olive: #4f5a39;
+  /* Light washes of the three accent colours, for tinted panels on ivory */
+  --color-wine-wash: #f1e6e1;
+  --color-terracotta-wash: #f2e8dd;
+  --color-olive-wash: #e9eadf;
   --color-alert: #8a1c12;
   --color-ok: #2f5132;
 

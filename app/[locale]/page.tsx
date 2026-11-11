@@ -75,23 +75,22 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <p className="mx-auto mt-8 max-w-4xl text-center font-serif text-3xl leading-[1.25] text-wine sm:text-[2.6rem]">
           {t("hero.lead")}
         </p>
-        {/* Three principles: earthy colour blocks, content aligned from the top */}
+        {/* Three principles: light washes of the accent colours, content aligned from the top */}
         <ul className="mx-auto mt-20 grid max-w-6xl gap-4 sm:mt-24 md:grid-cols-3 md:gap-5">
           {(
             [
-              { key: "growers", bg: "bg-wine" },
-              { key: "cellar", bg: "bg-terracotta" },
-              { key: "treasures", bg: "bg-olive" },
+              { key: "growers", bg: "bg-wine-wash", accent: "text-wine", rule: "bg-wine/40" },
+              { key: "cellar", bg: "bg-terracotta-wash", accent: "text-terracotta", rule: "bg-terracotta/40" },
+              { key: "treasures", bg: "bg-olive-wash", accent: "text-olive", rule: "bg-olive/40" },
             ] as const
-          ).map(({ key, bg }, i) => (
-            <li key={key} className={`${bg} relative overflow-hidden px-8 pb-10 pt-9 text-ivory sm:px-10 sm:pb-12`}>
-              <span aria-hidden="true" className="grain pointer-events-none absolute inset-0" />
-              <p className="eyebrow relative text-ivory/70">0{i + 1}</p>
-              <h2 className="relative mt-8 font-serif text-[1.9rem] font-medium leading-tight">
+          ).map(({ key, bg, accent, rule }, i) => (
+            <li key={key} className={`${bg} relative overflow-hidden px-8 pb-10 pt-9 sm:px-10 sm:pb-12`}>
+              <p className={`eyebrow relative ${accent} opacity-70`}>0{i + 1}</p>
+              <h2 className={`relative mt-8 font-serif text-[1.9rem] font-medium leading-tight ${accent}`}>
                 {t(`manifesto.${key}.title`)}
               </h2>
-              <span aria-hidden="true" className="relative mt-5 block h-px w-10 bg-ivory/50" />
-              <p className="relative mt-5 max-w-xs text-[0.95rem] leading-relaxed text-ivory/85">
+              <span aria-hidden="true" className={`relative mt-5 block h-px w-10 ${rule}`} />
+              <p className="relative mt-5 max-w-xs text-[0.95rem] leading-relaxed text-ink/80">
                 {t(`manifesto.${key}.body`)}
               </p>
             </li>
