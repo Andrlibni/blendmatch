@@ -387,7 +387,8 @@
     },
     "marquee": {
       "label": "What Lento stands for",
-      "items": "Senza fretta|Small growers|Native yeasts|Old casks|Italian Food Treasures|Made by hand|From Italy to the North"
+      "first": "Natural wine doesn't exist*|*said someone who never tried it|In vino veritas — in ours, a little sediment too|Slow, except at dinner|Cloudy is the new clear|Old casks, young ideas",
+      "second": "One glass leads to another|Nonna approves|Sulphites? Just a pinch, to be polite|Made by hand, shared at the table|Drink better, eat better|The anchovies aren't in a hurry. Neither are we"
     }
   },
   "notFound": {

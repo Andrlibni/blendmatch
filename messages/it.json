@@ -392,7 +392,8 @@
     },
     "marquee": {
       "label": "Ciò in cui crede Lento",
-      "items": "Senza fretta|Piccoli vignaioli|Lieviti indigeni|Botti vecchie|Italian Food Treasures|Fatto a mano|Dall'Italia al Nord"
+      "first": "Il vino naturale non esiste*|*cit. chi non l'ha mai assaggiato|In vino veritas, nel nostro anche un po' di fondo|Senza fretta (tranne a cena)|Torbido è il nuovo limpido|Botti vecchie, idee giovani",
+      "second": "Un bicchiere tira l'altro|La nonna approva|Solfiti? Un pizzico, giusto per educazione|Fatto a mano, bevuto in compagnia|Chi beve bene mangia meglio|Le alici non hanno fretta, nemmeno noi"
     }
   },
   "notFound": {

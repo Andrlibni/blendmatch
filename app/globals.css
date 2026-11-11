@@ -157,13 +157,12 @@
   100% { transform: scaleX(0.92); }
 }
 
-/* Emoji cursors (mouse only, switched on by components/fx/Cursor.tsx) */
+/* Emoji cursors (mouse only, switched on by components/fx/Cursor.tsx):
+   a bottle everywhere, a toast while the next page loads. */
 html.emoji-cursor,
-html.emoji-cursor body {
-  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%8D%BE%3C/text%3E%3C/svg%3E") 6 4, auto;
-}
+html.emoji-cursor body,
 html.emoji-cursor :is(a, button, select, summary, label, [role="button"], [data-cursor="view"]) {
-  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%8D%B7%3C/text%3E%3C/svg%3E") 8 4, pointer;
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext x='1' y='19' font-size='20'%3E%F0%9F%8D%BE%3C/text%3E%3C/svg%3E") 4 3, auto;
 }
 html.emoji-cursor :is(input, textarea, [contenteditable="true"]) {
   cursor: text;
@@ -173,7 +172,7 @@ html.emoji-cursor :is(button:disabled, [aria-disabled="true"]) {
 }
 html.emoji-cursor.is-navigating,
 html.emoji-cursor.is-navigating * {
-  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='1' y='26' font-size='30'%3E%F0%9F%A5%82%3C/text%3E%3C/svg%3E") 8 4, progress !important;
+  cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext x='1' y='19' font-size='20'%3E%F0%9F%A5%82%3C/text%3E%3C/svg%3E") 6 3, progress !important;
 }
 
 /* Scroll reveal */
@@ -186,6 +185,7 @@ html.emoji-cursor.is-navigating * {
 
 /* Marquee ribbon */
 .marquee-track { animation: marquee 42s linear infinite; }
+.marquee-track.is-reverse { animation-direction: reverse; animation-duration: 50s; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 

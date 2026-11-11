@@ -100,7 +100,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       <div className="mb-16 sm:mb-24">
-        <Marquee label={t("marquee.label")} items={t("marquee.items").split("|")} />
+        <Marquee label={t("marquee.label")} first={t("marquee.first").split("|")} second={t("marquee.second").split("|")} />
       </div>
 
       {/* Stories: the products and where they come from */}
