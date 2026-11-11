@@ -31,6 +31,7 @@ export async function Footer() {
         { href: "/legal/terms", label: t("terms") },
         { href: "/legal/privacy", label: t("privacy") },
         { href: "/legal/cookies", label: t("cookies") },
+        { href: "/credits", label: t("credits") },
       ],
     },
   ];

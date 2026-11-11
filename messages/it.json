@@ -43,7 +43,8 @@
     "cookies": "Cookie",
     "blurb": "Vini naturali di piccoli vignaioli italiani e cibi tutelati dai Presìdi Slow Food, spediti nel Regno Unito e nel Nord Europa.",
     "rights": "Tutti i diritti riservati.",
-    "responsible": "Gli alcolici sono venduti solo a maggiorenni. Bevi responsabilmente."
+    "responsible": "Gli alcolici sono venduti solo a maggiorenni. Bevi responsabilmente.",
+    "credits": "Crediti fotografici"
   },
   "age": {
     "title": "Hai l'età legale per bere alcolici?",
@@ -224,7 +225,9 @@
     "storyTitle": "Da {producer}",
     "meetProducer": "Conosci il produttore",
     "readStory": "Leggi “{title}”",
-    "related": "Potrebbe piacerti anche"
+    "related": "Potrebbe piacerti anche",
+    "photoIllustrative": "Foto illustrativa.",
+    "photoCredits": "Crediti"
   },
   "shop": {
     "title": "Il catalogo",
@@ -517,5 +520,13 @@
     "orders": "Richieste d'ordine trade",
     "noOrders": "Nessuna richiesta d'ordine.",
     "save": "Salva"
+  },
+  "credits": {
+    "title": "Crediti fotografici",
+    "intro": "Questo è un catalogo dimostrativo. Le foto qui elencate sono provvisorie, in attesa delle immagini fornite dai produttori.",
+    "licensed": "Foto con licenza libera",
+    "illustrative": "Illustrativa: mostra il tipo di prodotto, non la confezione del produttore.",
+    "retailer": "Foto delle bottiglie da enoteche online",
+    "retailerNote": "Usate solo per questa demo non pubblica, da sostituire con le foto dei produttori prima del lancio."
   }
 }

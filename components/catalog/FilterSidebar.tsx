@@ -73,7 +73,9 @@ export async function FilterSidebar({ query }: Props) {
             {group.title}
           </h2>
           <ul className="mt-3 space-y-0.5">
-            {group.options.map((o) => {
+            {group.options
+              .filter((o) => o.count > 0 || group.isActive(o.value))
+              .map((o) => {
               const active = group.isActive(o.value);
               const disabled = o.count === 0 && !active;
               return (

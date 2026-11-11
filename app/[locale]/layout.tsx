@@ -6,6 +6,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL } from "@/lib/config";
+import { SITE_INDEXABLE } from "@/lib/indexing";
 import { AGE_COOKIE, getShopContext } from "@/lib/shop-context";
 import { ShopProvider } from "@/components/providers/ShopProvider";
 import { TopBar } from "@/components/layout/TopBar";
@@ -52,6 +53,7 @@ export async function generateMetadata({
     alternates: {
       languages: Object.fromEntries(routing.locales.map((l) => [l, `/${l}`])),
     },
+    robots: SITE_INDEXABLE ? undefined : { index: false, follow: false },
   };
 }
 

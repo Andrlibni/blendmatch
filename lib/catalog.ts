@@ -1,6 +1,7 @@
 import { products } from "@/data/products";
 import { getProducer, producers } from "@/data/producers";
 import type { Product, ProductCategory } from "@/data/types";
+import { imageFor } from "@/lib/images";
 
 export const PAGE_SIZE = 12;
 
@@ -204,8 +205,12 @@ export function searchCatalog(query: CatalogQuery, priceOf: (p: Product) => numb
       case "price-desc":
         return priceOf(b.p) - priceOf(a.p);
       default: {
+        // Products with a real photo come first, then featured and new ones.
         const rank = (x: typeof a) =>
-          x.score * 10 + (x.p.featured ? 2 : 0) + (x.p.isNew ? 1 : 0);
+          x.score * 10 +
+          (imageFor("products", x.p.slug) ? 4 : 0) +
+          (x.p.featured ? 2 : 0) +
+          (x.p.isNew ? 1 : 0);
         return rank(b) - rank(a) || a.index - b.index;
       }
     }

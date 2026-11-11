@@ -8,6 +8,7 @@ import { stories } from "@/data/stories";
 import { formatLabel, relatedProducts } from "@/lib/catalog";
 import { formatNumber } from "@/lib/format";
 import { imageFor } from "@/lib/images";
+import { photoCredits } from "@/data/photo-credits";
 import { SITE_URL, TRADE_RULES } from "@/lib/config";
 import { getTradeInfo } from "@/lib/shop-context";
 import { ProductImage } from "@/components/product/ProductImage";
@@ -141,6 +142,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/shop/
       <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
         <div className="lg:sticky lg:top-6 lg:self-start">
           <ProductImage product={product} priority sizes="(min-width: 1024px) 55vw, 100vw" />
+          {photoCredits[product.slug]?.kind === "licensed" && (
+            <p className="mt-3 text-xs text-muted">
+              {t("photoIllustrative")}{" "}
+              <Link href="/credits" className="underline underline-offset-4 hover:text-wine">
+                {t("photoCredits")}
+              </Link>
+            </p>
+          )}
         </div>
 
         <div className="pb-8">

@@ -43,7 +43,8 @@
     "cookies": "Cookies",
     "blurb": "Natural wines from small Italian growers and foods protected by Slow Food Presìdi, shipped to the UK and Northern Europe.",
     "rights": "All rights reserved.",
-    "responsible": "Alcohol is sold only to people aged 18 or over. Please drink responsibly."
+    "responsible": "Alcohol is sold only to people aged 18 or over. Please drink responsibly.",
+    "credits": "Photo credits"
   },
   "age": {
     "title": "Are you of legal drinking age?",
@@ -224,7 +225,9 @@
     "storyTitle": "From {producer}",
     "meetProducer": "Meet the producer",
     "readStory": "Read “{title}”",
-    "related": "You may also like"
+    "related": "You may also like",
+    "photoIllustrative": "Illustrative photo.",
+    "photoCredits": "Credits"
   },
   "shop": {
     "title": "The catalogue",
@@ -512,5 +515,13 @@
     "orders": "Trade order requests",
     "noOrders": "No order requests yet.",
     "save": "Save"
+  },
+  "credits": {
+    "title": "Photo credits",
+    "intro": "This is a demo catalogue. The photos below are placeholders until producers supply their own images.",
+    "licensed": "Freely licensed photos",
+    "illustrative": "Illustrative: shows the type of product, not the producer's own packaging.",
+    "retailer": "Bottle photos from online wine shops",
+    "retailerNote": "Used only for this non-public demo and to be replaced with photos supplied by the producers before launch."
   }
 }

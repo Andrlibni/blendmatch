@@ -11,7 +11,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/[locale]/legal/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const page = legalPages[slug];
-  return page ? { title: page.title, robots: { index: true } } : {};
+  return page ? { title: page.title } : {};
 }
 
 export default async function LegalPage({ params }: PageProps<"/[locale]/legal/[slug]">) {
