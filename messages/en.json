@@ -227,7 +227,8 @@
     "readStory": "Read “{title}”",
     "related": "You may also like",
     "photoIllustrative": "Illustrative photo.",
-    "photoCredits": "Credits"
+    "photoCredits": "Credits",
+    "addedShort": "Added"
   },
   "shop": {
     "title": "The catalogue",
@@ -383,6 +384,10 @@
       "point2": "Wine in mixable cases of {size} · minimum {min} bottles",
       "point3": "{rate}% off wine from {from} bottles",
       "point4": "EU reverse charge and UK/Norway export handled for you"
+    },
+    "marquee": {
+      "label": "What Lento stands for",
+      "items": "Senza fretta|Small growers|Native yeasts|Old casks|Italian Food Treasures|Made by hand|From Italy to the North"
     }
   },
   "notFound": {
@@ -537,5 +542,8 @@
     "landscapes": "Vineyard and landscape photos",
     "landscapesNote": "Freely licensed photos of the areas our producers work in. They show the landscape of each zone, not necessarily the producer's own vineyards.",
     "home": "Home page"
+  },
+  "fx": {
+    "view": "View"
   }
 }

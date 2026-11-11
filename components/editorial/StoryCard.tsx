@@ -4,7 +4,7 @@ import { Photo } from "./Photo";
 
 export function StoryCard({ story, minutesLabel }: { story: Story; minutesLabel: string }) {
   return (
-    <article className="group relative flex flex-col">
+    <article className="group relative flex flex-col" data-cursor="view" data-reveal>
       <Photo folder="stories" slug={story.slug} alt={story.title} aspect="aspect-[4/5]" sizes="(min-width: 1024px) 33vw, 100vw" />
       <p className="eyebrow mt-5 text-muted">
         {story.kicker} · {minutesLabel}

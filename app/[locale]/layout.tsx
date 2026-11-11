@@ -14,6 +14,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AgeGate } from "@/components/layout/AgeGate";
 import { TradeBand } from "@/components/layout/TradeBand";
+import { Suspense } from "react";
+import { NavProgress } from "@/components/fx/NavProgress";
+import { Cursor } from "@/components/fx/Cursor";
+import { RevealObserver } from "@/components/fx/RevealObserver";
 import "../globals.css";
 
 const serif = Cormorant_Garamond({
@@ -94,6 +98,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
               <Footer />
             </div>
             {!ageConfirmed && <AgeGate />}
+            <Suspense fallback={null}>
+              <NavProgress />
+            </Suspense>
+            <Cursor />
+            <RevealObserver />
           </ShopProvider>
         </NextIntlClientProvider>
       </body>

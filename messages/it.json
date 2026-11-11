@@ -227,7 +227,8 @@
     "readStory": "Leggi “{title}”",
     "related": "Potrebbe piacerti anche",
     "photoIllustrative": "Foto illustrativa.",
-    "photoCredits": "Crediti"
+    "photoCredits": "Crediti",
+    "addedShort": "Aggiunto"
   },
   "shop": {
     "title": "Il catalogo",
@@ -388,6 +389,10 @@
       "point2": "Vino in casse mixabili da {size} · minimo {min} bottiglie",
       "point3": "{rate}% di sconto sul vino da {from} bottiglie",
       "point4": "Reverse charge UE ed esportazione UK/Norvegia gestiti da noi"
+    },
+    "marquee": {
+      "label": "Ciò in cui crede Lento",
+      "items": "Senza fretta|Piccoli vignaioli|Lieviti indigeni|Botti vecchie|Italian Food Treasures|Fatto a mano|Dall'Italia al Nord"
     }
   },
   "notFound": {
@@ -542,5 +547,8 @@
     "landscapes": "Foto di vigne e paesaggi",
     "landscapesNote": "Foto con licenza libera delle zone in cui lavorano i nostri produttori. Mostrano il paesaggio della zona, non necessariamente le vigne del produttore.",
     "home": "Home page"
+  },
+  "fx": {
+    "view": "Scopri"
   }
 }

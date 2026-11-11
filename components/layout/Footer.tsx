@@ -58,6 +58,11 @@ export async function Footer() {
           </div>
         ))}
       </div>
+      <div aria-hidden="true" className="overflow-hidden px-4 sm:px-6">
+        <p className="footer-wordmark mx-auto max-w-[1400px] select-none text-center font-serif leading-[0.8] tracking-[0.12em] text-transparent">
+          LENTO
+        </p>
+      </div>
       <div className="border-t hairline">
         <div className="mx-auto flex max-w-[1400px] flex-col gap-2 px-4 py-6 text-xs text-muted sm:flex-row sm:justify-between sm:px-6">
           <p>© {year} Lento. {t("rights")}</p>

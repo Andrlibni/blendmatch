@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/editorial/SectionHeading";
 import { ProductCard } from "@/components/product/ProductCard";
 import { JsonLd } from "@/components/editorial/JsonLd";
 import { SITE_URL } from "@/lib/config";
+import { Marquee } from "@/components/fx/Marquee";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -76,7 +77,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           {t("hero.lead")}
         </p>
         {/* Three principles: green, white and red washes side by side, a quiet nod to the Italian flag */}
-        <ul className="mx-auto mt-20 grid max-w-6xl sm:mt-24 md:grid-cols-3">
+        <ul data-reveal className="mx-auto mt-20 grid max-w-6xl sm:mt-24 md:grid-cols-3">
           {(
             [
               { key: "growers", bg: "bg-olive-wash", accent: "text-olive", rule: "bg-olive/40" },
@@ -98,6 +99,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </ul>
       </section>
 
+      <div className="mb-16 sm:mb-24">
+        <Marquee label={t("marquee.label")} items={t("marquee.items").split("|")} />
+      </div>
+
       {/* Stories: the products and where they come from */}
       <section className="mx-auto max-w-[1400px] px-4 sm:px-6" aria-labelledby="stories-heading">
         <SectionHeading
@@ -112,7 +117,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             const items = story.products.map(getProduct).filter((p) => !!p).slice(0, 3);
             return (
               <li key={story.slug} className="py-14 sm:py-20">
-                <article className="group relative grid items-center gap-8 md:grid-cols-2 md:gap-16">
+                <article className="group relative grid items-center gap-8 md:grid-cols-2 md:gap-16" data-reveal>
                   <div className={i % 2 ? "md:order-2" : ""}>
                     <Photo
                       folder="stories"
@@ -225,7 +230,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <ul className="grid gap-x-8 gap-y-12 pt-10 md:grid-cols-3">
           {featuredProducers.map((p) => (
             <li key={p.slug}>
-              <article className="group relative">
+              <article className="group relative" data-cursor="view" data-reveal>
                 <Photo folder="producers" slug={p.slug} alt={p.name} aspect="aspect-[4/3]" sizes="(min-width: 768px) 33vw, 100vw" />
                 <p className="eyebrow mt-5 text-muted">
                   {p.region} · {p.area}
@@ -244,7 +249,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Trade */}
       <section className="mx-auto mt-28 max-w-[1400px] px-4 sm:px-6" aria-labelledby="trade-heading">
-        <div className="grid gap-10 bg-ink px-6 py-14 text-ivory sm:px-12 sm:py-20 lg:grid-cols-[1.2fr_1fr] lg:gap-20 lg:px-16">
+        <div data-reveal className="grid gap-10 bg-ink px-6 py-14 text-ivory sm:px-12 sm:py-20 lg:grid-cols-[1.2fr_1fr] lg:gap-20 lg:px-16">
           <div>
             <p className="eyebrow opacity-70">{t("trade.kicker")}</p>
             <h2 id="trade-heading" className="mt-4 font-serif text-4xl font-medium leading-tight sm:text-5xl">

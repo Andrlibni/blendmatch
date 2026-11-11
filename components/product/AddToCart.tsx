@@ -36,14 +36,17 @@ export function AddToCart({ slug }: { slug: string }) {
           label={t("quantity")}
         />
         <button
+          key={added ? "added" : "idle"}
           type="button"
           onClick={() => {
             addToCart(product.slug, qty);
             setAdded(true);
           }}
-          className="eyebrow flex-1 bg-ink px-6 py-4 text-ivory transition-colors duration-300 hover:bg-wine"
+          className={`eyebrow flex-1 px-6 py-4 text-ivory transition-colors duration-300 ${
+            added ? "added-pop bg-olive" : "bg-ink hover:bg-wine"
+          }`}
         >
-          {t("add")} · {money(price * qty)}
+          {added ? `✓ ${t("addedShort")}` : `${t("add")} · ${money(price * qty)}`}
         </button>
       </div>
       <p aria-live="polite" className="mt-3 min-h-5 text-sm">

@@ -10,7 +10,7 @@ export function ProductCard({ product, priority }: { product: Product; priority?
   const t = useTranslations("product");
   const producer = getProducer(product.producer);
   return (
-    <article className="group relative flex flex-col">
+    <article className="group relative flex flex-col" data-cursor="view" data-reveal>
       <ProductImage product={product} priority={priority} />
       {(product.isNew || product.treasure) && (
         <p className="eyebrow absolute left-3 top-3 flex gap-2 text-[0.625rem]">
